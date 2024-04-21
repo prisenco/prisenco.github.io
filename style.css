@@ -132,12 +132,12 @@ body {
       page-content {
         width: 100%;
         padding: 0 5%;
+        overflow-y: visible;
         nav-menu {
-          position: relative;
+          position: sticky;
           display: flex;
           width: 100%;
           top: 0;
-          margin-top: 0;
           margin-bottom: 4rem;
           margin-top: 4rem;
           border: none;
