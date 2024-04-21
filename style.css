@@ -92,6 +92,7 @@ body {
           font-size: 2rem;
           margin: 0;
           padding: 0;
+          line-height: 1.8rem;
         }
       }
 
@@ -150,18 +151,42 @@ body {
         recent-posts {
           top: 0;
           position: relative;
-          min-height: 500px;
         }
         footer {
-          width: 100%;
-          position: relative;
-          margin: 0 auto;
+          width: 90%;
+          position: fixed;
+          margin: 0 5%;
         }
       }
     }
 
     /* Mobile */
     @media (max-width: 414px) {
+      logo-image {
+        left: -1rem;
+        background-size: 128px 128px;
+      }
+      page-content {
+        header {
+          a {
+            font-size: 3.5rem;
+            margin-top: -0.7rem;
+          }
+        }
+        recent-posts {
+          width: 100%;
+        }
+        nav-menu {
+          a {
+            font-size: 0.6rem;
+          }
+        }
+        footer {
+          position: fixed;
+          width: 90%;
+          margin: 0 5%;
+        }
+      }
     }
   }
 
