@@ -65,11 +65,6 @@ body {
         z-index: 1;
       }
 
-      footer img {
-        width: 32px;
-        height: 32px;
-      }
-
       a {
         display: inline-block;
         cursor: pointer;
@@ -111,18 +106,20 @@ body {
       }
 
       footer {
-        position: absolute;
+        position: fixed;
         display: flex;
         box-sizing: border-box;
         justify-content: space-between;
         width: 600px;
         bottom: 0;
-        right: 0;
+        right: calc((100vw - 800px) / 2);
         text-align: right;
         border-top: 1px solid var(--line-color);
         img {
           margin-top: 0.25rem;
           margin-left: 0.5rem;
+          width: 32px;
+          height: 32px;
         }
       }
     }
@@ -155,6 +152,7 @@ body {
         footer {
           width: 90%;
           position: fixed;
+          right: 0;
           margin: 0 5%;
         }
       }
