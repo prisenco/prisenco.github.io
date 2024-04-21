@@ -1,0 +1,155 @@
+body {
+  --header-text-color: #ebbd81;
+  --line-color: #ebbd81;
+  --primary-text-color: #eaeaea;
+  --secondary-text-color: #222;
+  --background-primary: #cf5c37;
+  --background-secondary: #a5492b;
+  --primary-line-color: #a5492b;
+
+  prisen-co {
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+
+    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+    color: var(--primary-text-color);
+    background: url(img/noise.png),
+                radial-gradient(circle, var(--background-primary) 0%, var(--background-primary) 85%, var(--background-secondary) 100%);
+
+
+    page-content {
+      display: block;
+      position: relative;
+      width: 800px;
+      height: 100%;
+      margin-left: auto;
+      margin-right: auto;
+
+      header {
+        font-weight: 800;
+        font-size: 5rem;
+        margin-top: -1rem;
+      }
+
+      footer img {
+        width: 32px;
+        height: 32px;
+      }
+
+      a {
+        display: inline-block;
+        cursor: pointer;
+        font-weight: 800;
+        text-decoration: none;
+        color: var(--secondary-text-color);
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      nav-menu {
+        display: block;
+        width: 300px;
+        position: absolute;
+        right: 0;
+        border-top: 1px solid var(--line-color);
+        text-align: right;
+        a {
+          display: block;
+          margin-bottom: 3rem;
+        }
+      }
+
+      footer {
+        position: absolute;
+        width: 600px;
+        bottom: 0;
+        right: 0;
+        text-align: right;
+        border-top: 1px solid var(--line-color);
+        a {
+          display: block;
+        }
+        img {
+          margin-top: 0.25rem;
+          margin-left: 0.5rem;
+        }
+      }
+    }
+  }
+
+  card-front,
+  card-back {
+    display: block;
+    position: relative;
+    width: 1125px;
+    height: 675px;
+    margin: auto;
+    margin-bottom: 1rem;
+
+    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+    color: var(--primary-text-color);
+    background: url(img/noise.png),
+                radial-gradient(circle, var(--background-primary) 0%, var(--background-primary) 85%, var(--background-secondary) 100%);
+
+    code {
+      display: block;
+      position: relative;
+      padding-top: 300.5px;
+      left: 0;
+      width: 100%;
+      font-weight: 400;
+      font-size: 3rem;
+      text-align: center;
+      color: var(--header-text-color);
+    }
+    h1 {
+      margin: 0;
+      padding: 0;
+      padding-top: 4rem;
+      text-align: center;
+      font-weight: 800;
+      font-size: 2rem;
+    }
+    h2 {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      font-weight: 800;
+      font-size: 1.2rem;
+    }
+    contact-info {
+      display: flex;
+      box-sizing: border-box;
+      justify-content: space-between;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      padding: 75px;
+      font-weight: 800;
+      font-size: 1.1rem;
+      color: var(--secondary-text-color);
+    }
+  }
+
+  card-back {
+    background: url(img/noise.png),
+                radial-gradient(circle, var(--background-secondary) 0%, var(--background-secondary) 85%, var(--background-primary) 100%);
+    code {
+      opacity: 0.25;
+    }
+    qr-code {
+      display: block;
+      position: absolute;
+      bottom: 112.5px;
+      right: 112.5px;
+    }
+  }
+}
