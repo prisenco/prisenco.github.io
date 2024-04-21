@@ -41,6 +41,7 @@ body {
     page-content {
       display: block;
       position: relative;
+      box-sizing: border-box;
       width: 800px;
       height: 100%;
       min-height: 800px;
@@ -56,10 +57,7 @@ body {
         margin-left: 4.5rem;
         color: var(--header-text-color);
         z-index: 1;
-        height: 216px;
       }
-
-      
 
       footer img {
         width: 32px;
@@ -78,12 +76,26 @@ body {
         text-decoration: underline;
       }
 
+      recent-posts {
+        display: block;
+        border-top: 1px solid var(--line-color);
+        position: absolute;
+        top: 14rem;
+        width: 60%;
+        h2 {
+          font-size: 2rem;
+          margin: 0;
+          padding: 0;
+        }
+      }
+
       nav-menu {
         display: block;
-        width: 300px;
+        width: fit-content;
         position: absolute;
         right: 0;
-        border-top: 1px solid var(--line-color);
+        top: 20rem;
+        border-left: 1px solid var(--line-color);
         text-align: right;
         a {
           display: block;
@@ -94,6 +106,7 @@ body {
       footer {
         position: absolute;
         display: flex;
+        box-sizing: border-box;
         justify-content: space-between;
         width: 600px;
         bottom: 0;
@@ -105,6 +118,44 @@ body {
           margin-left: 0.5rem;
         }
       }
+    }
+
+    /* Tablet */
+    @media (max-width: 800px) {
+      page-content {
+        width: 100%;
+        padding: 0 5%;
+        nav-menu {
+          position: relative;
+          display: flex;
+          width: 100%;
+          top: 0;
+          margin-top: 0;
+          margin-bottom: 4rem;
+          margin-top: 4rem;
+          border: none;
+          justify-content: space-between;
+          a {
+            margin: 0;
+            display: inline-block;
+            font-size: 0.8rem;
+          }
+        }
+        recent-posts {
+          top: 0;
+          position: relative;
+          min-height: 500px;
+        }
+        footer {
+          width: 100%;
+          position: relative;
+          margin: 0 auto;
+        }
+      }
+    }
+
+    /* Mobile */
+    @media (max-width: 414px) {
     }
   }
 
