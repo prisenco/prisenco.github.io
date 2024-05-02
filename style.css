@@ -84,11 +84,22 @@ body {
         position: absolute;
         top: 14rem;
         width: 60%;
-        h2 {
-          font-size: 2rem;
-          margin: 0 0 2rem 0;
-          padding: 0;
-          line-height: 1.8rem;
+        ul {
+          list-style-type: none;
+          li {
+            h2 {
+              font-size: 2rem;
+              margin: 0 0 2rem 0;
+              padding: 0;
+              line-height: 1.8rem;
+            }
+            h3 {
+              font-size: 1.5rem;
+              margin: 0 0 1rem 0;
+              padding: 0;
+            }
+            margin-bottom: 2rem;
+          }
         }
       }
 
