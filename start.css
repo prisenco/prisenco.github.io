@@ -1,0 +1,167 @@
+html {
+  overscroll-behavior: none;
+}
+
+body {
+  --primary-text-color: #eaeaea;
+  /* Ref: Valhalla */
+  /* https://colors.dopely.top/color-pedia/282c3c */
+
+  padding: 0;
+  margin: 0;
+
+  prisen-co {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    overflow-y: scroll;
+
+    /* System Font Stack */
+    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+    color: var(--primary-text-color);
+
+    background-image:
+      url("img/noise.png"),
+      repeating-linear-gradient(6deg, rgba(56,61,82, 0.35) 0px, rgba(82,82,82, 0.35) 1px, transparent 1px, transparent 31px),
+      repeating-linear-gradient(96deg, rgba(56,61,82, 0.35) 0px, rgba(56,61,82, 0.35) 1px, transparent 1px, transparent 31px),
+      radial-gradient(circle at center, rgb(0,0,0, 0%) 0%, rgb(0,0,0, 25%), 85%, rgb(0,0,0, 100%) 100%),
+      linear-gradient(90deg, rgb(39,43,58),rgb(39,43,58));
+
+    h1 {
+      width: 100%;
+      text-align: center;
+      letter-spacing: 2%;
+      font-weight: 800;
+      font-size: 4rem;
+      text-shadow: 1px 1px 6px rgba(0,0,0,0.5);
+      margin: 0;
+      margin-top: 25vw;
+    }
+    h2 {
+      width: 100%;
+      text-align: center;
+      letter-spacing: 3.5%;
+      font-weight: 500;
+      text-shadow: 1px 1px 6px rgba(0,0,0,0.5);
+      margin: 0;
+    }
+
+    building-block {
+      display: block;
+      position: absolute;
+      width: 1vw;
+      height: 1vw;
+      background-color: rgba(255,255,255,0.75);
+      box-shadow: 0 0 8px rgba(255,255,255,0.5);
+      border-radius: 100%;
+    }
+    building-block:nth-of-type(1) {
+      top: 21vw;
+      left: 88vw;
+    }
+    building-block:nth-of-type(2) {
+      top: 18vw;
+      left: 80vw;
+    }
+    building-block:nth-of-type(3) {
+      top: 3vw;
+      left: 53vw;
+    }
+    building-block:nth-of-type(4) {
+      top: 5vw;
+      left: 89vw;
+    }
+    building-block:nth-of-type(5) {
+      top: 17vw;
+      left: 52vw;
+    }
+    building-block:nth-of-type(6) {
+      top: 2vw;
+      left: 92vw;
+    }
+    building-block:nth-of-type(7) {
+      top: 21vw;
+      left: 76vw;
+    }
+    building-block:nth-of-type(8) {
+      top: 19vw;
+      left: 31vw;
+    }
+    building-block:nth-of-type(9) {
+      top: 9vw;
+      left: 77vw;
+    }
+    building-block:nth-of-type(10) {
+      top: 10vw;
+      left: 7vw;
+    }
+    building-block:nth-of-type(11) {
+      top: 13vw;
+      left: 41vw;
+    }
+    building-block:nth-of-type(12) {
+      top: 14vw;
+      left: 73vw;
+    }
+    building-block:nth-of-type(13) {
+      top: 13vw;
+      left: 22vw;
+    }
+    building-block:nth-of-type(14) {
+      top: 5vw;
+      left: 19vw;
+    }
+    building-block:nth-of-type(15) {
+      top: 4vw;
+      left: 72vw;
+    }
+    building-block:nth-of-type(16) {
+      top: 5vw;
+      left: 41vw;
+    }
+
+    info-column {
+      display: block;
+      position: absolute;
+      width: 2vw;
+      height: 2vw;
+      border-radius: 100%;
+      box-shadow: 0 0 8px rgba(255,255,255,0.05);
+      background-color: rgba(255, 255, 255, 0.05);
+    }
+    info-column:nth-of-type(1) {
+      top: 7vw;
+      left: 24vw;
+    }
+    info-column:nth-of-type(2) {
+      top: 5vw;
+      left: 78vw;
+    }
+    info-column:nth-of-type(3) {
+      top: 18vw;
+      left: 22vw;
+    }
+    info-column:nth-of-type(4) {
+      top: 19vw;
+      left: 56vw;
+    }
+    info-column:nth-of-type(5) {
+      top: 22vw;
+      left: 96vw;
+    }
+    info-column:nth-of-type(6) {
+      top: 24vw;
+      left: 34vw;
+    }
+    info-column:nth-of-type(7) {
+      top: 7vw;
+      left: 60vw;
+    }
+    info-column:nth-of-type(8) {
+      top: 13vw;
+      left: 10vw;
+    }
+  }
+}
