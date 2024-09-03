@@ -24,8 +24,8 @@ body {
 
     background-image:
       url("img/noise.png"),
-      repeating-linear-gradient(6deg, rgba(56,61,82, 0.35) 0px, rgba(82,82,82, 0.35) 1px, transparent 1px, transparent 31px),
-      repeating-linear-gradient(96deg, rgba(56,61,82, 0.35) 0px, rgba(56,61,82, 0.35) 1px, transparent 1px, transparent 31px),
+      repeating-linear-gradient(6deg, rgba(56,61,82, 0.35) 0px, rgba(82,82,82, 0.35) 0.068vw, transparent 0.068vw, transparent 2.11vw),
+      repeating-linear-gradient(96deg, rgba(56,61,82, 0.35) 0px, rgba(56,61,82, 0.35) 0.068vw, transparent 0.068vw, transparent 2.11vw),
       radial-gradient(circle at center, rgb(0,0,0, 0%) 0%, rgb(0,0,0, 25%), 85%, rgb(0,0,0, 100%) 100%),
       linear-gradient(90deg, rgb(39,43,58),rgb(39,43,58));
 
@@ -34,7 +34,7 @@ body {
       text-align: center;
       letter-spacing: 2%;
       font-weight: 800;
-      font-size: 4rem;
+      font-size: max(4rem, 6vw);
       text-shadow: 1px 1px 6px rgba(0,0,0,0.5);
       margin: 0;
       margin-top: 25vw;
@@ -44,6 +44,7 @@ body {
       text-align: center;
       letter-spacing: 3.5%;
       font-weight: 500;
+      font-size: max(1.6rem, 2vw);
       text-shadow: 1px 1px 6px rgba(0,0,0,0.5);
       margin: 0;
     }
