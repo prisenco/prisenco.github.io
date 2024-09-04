@@ -19,15 +19,45 @@ body {
     overflow-y: scroll;
 
     /* System Font Stack */
-    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+    font-family:
+      -apple-system,
+      BlinkMacSystemFont,
+      avenir next,
+      avenir,
+      segoe ui,
+      helvetica neue,
+      helvetica,
+      Cantarell,
+      Ubuntu,
+      roboto,
+      noto,
+      arial,
+      sans-serif;
     color: var(--primary-text-color);
 
-    background-image:
-      url("img/noise.png"),
-      repeating-linear-gradient(6deg, rgba(56,61,82, 0.35) 0px, rgba(82,82,82, 0.35) 0.068vw, transparent 0.068vw, transparent 2.11vw),
-      repeating-linear-gradient(96deg, rgba(56,61,82, 0.35) 0px, rgba(56,61,82, 0.35) 0.068vw, transparent 0.068vw, transparent 2.11vw),
-      radial-gradient(circle at center, rgb(0,0,0, 0%) 0%, rgb(0,0,0, 25%), 85%, rgb(0,0,0, 100%) 100%),
-      linear-gradient(90deg, rgb(39,43,58),rgb(39,43,58));
+    background-image: url("img/noise.png"),
+      repeating-linear-gradient(
+        6deg,
+        rgba(56, 61, 82, 0.35) 0px,
+        rgba(82, 82, 82, 0.35) 0.068vw,
+        transparent 0.068vw,
+        transparent 2.11vw
+      ),
+      repeating-linear-gradient(
+        96deg,
+        rgba(56, 61, 82, 0.35) 0px,
+        rgba(56, 61, 82, 0.35) 0.068vw,
+        transparent 0.068vw,
+        transparent 2.11vw
+      ),
+      radial-gradient(
+        circle at center,
+        rgb(0, 0, 0, 0%) 0%,
+        rgb(0, 0, 0, 25%),
+        85%,
+        rgb(0, 0, 0, 100%) 100%
+      ),
+      linear-gradient(90deg, rgb(39, 43, 58), rgb(39, 43, 58));
 
     h1 {
       width: 100%;
@@ -35,7 +65,7 @@ body {
       letter-spacing: 2%;
       font-weight: 800;
       font-size: max(4rem, 6vw);
-      text-shadow: 1px 1px 6px rgba(0,0,0,0.5);
+      text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
       margin: 0;
       margin-top: 25vw;
     }
@@ -45,152 +75,185 @@ body {
       letter-spacing: 3.5%;
       font-weight: 500;
       font-size: max(1.6rem, 2vw);
-      text-shadow: 1px 1px 6px rgba(0,0,0,0.5);
+      text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
       margin: 0;
+      margin-bottom: 25vw;
     }
 
     main {
       height: 400vw;
     }
 
-    building-block {
-      display: block;
-      position: absolute;
-      width: 1vw;
-      height: 1vw;
-      background-color: rgba(255,255,255,0.75);
-      box-shadow: 0 0 8px rgba(255,255,255,0.5);
-      border-radius: 100%;
-    }
-    building-block:nth-of-type(1) {
-      top: 21vw;
-      left: 88vw;
-      background-color: rgba(255,255,255,0.53);
-    }
-    building-block:nth-of-type(2) {
-      top: 18vw;
-      left: 80vw;
-      background-color: rgba(255,255,255,0.88);
-    }
-    building-block:nth-of-type(3) {
-      top: 3vw;
-      left: 53vw;
-      background-color: rgba(255,255,255,0.94);
-    }
-    building-block:nth-of-type(4) {
-      top: 5vw;
-      left: 89vw;
-      background-color: rgba(255,255,255,0.54);
-    }
-    building-block:nth-of-type(5) {
-      top: 17vw;
-      left: 52vw;
-      background-color: rgba(255,255,255,0.43);
-    }
-    building-block:nth-of-type(6) {
-      top: 2vw;
-      left: 92vw;
-      background-color: rgba(255,255,255,0.76);
-    }
-    building-block:nth-of-type(7) {
-      top: 21vw;
-      left: 76vw;
-      background-color: rgba(255,255,255,0.32);
-    }
-    building-block:nth-of-type(8) {
-      top: 19vw;
-      left: 31vw;
-      background-color: rgba(255,255,255,0.68);
-    }
-    building-block:nth-of-type(9) {
-      top: 9vw;
-      left: 77vw;
-      background-color: rgba(255,255,255,0.26);
-    }
-    building-block:nth-of-type(10) {
-      top: 10vw;
-      left: 7vw;
-      background-color: rgba(255,255,255,0.56);
-    }
-    building-block:nth-of-type(11) {
-      top: 13vw;
-      left: 41vw;
-      background-color: rgba(255,255,255,0.73);
-    }
-    building-block:nth-of-type(12) {
-      top: 14vw;
-      left: 73vw;
-      background-color: rgba(255,255,255,0.69);
-    }
-    building-block:nth-of-type(13) {
-      top: 13vw;
-      left: 22vw;
-      background-color: rgba(255,255,255,0.38);
-    }
-    building-block:nth-of-type(14) {
-      top: 5vw;
-      left: 19vw;
-      background-color: rgba(255,255,255,0.68);
-    }
-    building-block:nth-of-type(15) {
-      top: 4vw;
-      left: 72vw;
-      background-color: rgba(255,255,255,0.56);
-    }
-    building-block:nth-of-type(16) {
-      top: 5vw;
-      left: 41vw;
-      background-color: rgba(255,255,255,0.37);
+    @supports (animation-timeline: view()) {
+      building-block {
+        display: block;
+        position: absolute;
+        width: 1vw;
+        height: 1vw;
+        background-color: rgba(255, 255, 255, 0.75);
+        box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+        border-radius: 100%;
+      }
+      building-block:nth-of-type(1) {
+        top: 21vw;
+        left: 88vw;
+        background-color: rgba(255, 255, 255, 0.53);
+      }
+      building-block:nth-of-type(2) {
+        top: 18vw;
+        left: 80vw;
+        background-color: rgba(255, 255, 255, 0.88);
+      }
+      building-block:nth-of-type(3) {
+        top: 3vw;
+        left: 53vw;
+        background-color: rgba(255, 255, 255, 0.94);
+      }
+      building-block:nth-of-type(4) {
+        top: 5vw;
+        left: 89vw;
+        background-color: rgba(255, 255, 255, 0.54);
+      }
+      building-block:nth-of-type(5) {
+        top: 17vw;
+        left: 52vw;
+        background-color: rgba(255, 255, 255, 0.43);
+      }
+      building-block:nth-of-type(6) {
+        top: 2vw;
+        left: 92vw;
+        background-color: rgba(255, 255, 255, 0.76);
+      }
+      building-block:nth-of-type(7) {
+        top: 21vw;
+        left: 76vw;
+        background-color: rgba(255, 255, 255, 0.32);
+      }
+      building-block:nth-of-type(8) {
+        top: 19vw;
+        left: 31vw;
+        background-color: rgba(255, 255, 255, 0.68);
+      }
+      building-block:nth-of-type(9) {
+        top: 9vw;
+        left: 77vw;
+        background-color: rgba(255, 255, 255, 0.26);
+      }
+      building-block:nth-of-type(10) {
+        top: 10vw;
+        left: 7vw;
+        background-color: rgba(255, 255, 255, 0.56);
+      }
+      building-block:nth-of-type(11) {
+        top: 13vw;
+        left: 41vw;
+        background-color: rgba(255, 255, 255, 0.73);
+      }
+      building-block:nth-of-type(12) {
+        top: 14vw;
+        left: 73vw;
+        background-color: rgba(255, 255, 255, 0.69);
+      }
+      building-block:nth-of-type(13) {
+        top: 13vw;
+        left: 22vw;
+        background-color: rgba(255, 255, 255, 0.38);
+      }
+      building-block:nth-of-type(14) {
+        top: 5vw;
+        left: 19vw;
+        background-color: rgba(255, 255, 255, 0.68);
+      }
+      building-block:nth-of-type(15) {
+        top: 4vw;
+        left: 72vw;
+        background-color: rgba(255, 255, 255, 0.56);
+      }
+      building-block:nth-of-type(16) {
+        top: 5vw;
+        left: 41vw;
+        background-color: rgba(255, 255, 255, 0.37);
+      }
+
+      @keyframes buildingBlockOne {
+        0% {
+          top: 21vw;
+          left: 88vw;
+          border-radius: 100%;
+        }
+        30% {
+          top: 42vw;
+          left: 44vw;
+          border-radius: 0%;
+        }
+      }
+      building-block:nth-of-type(1) {
+        animation: buildingBlockOne ease-out;
+        animation-timeline: scroll(root);
+      }
+
+      info-column {
+        display: block;
+        position: absolute;
+        width: 2vw;
+        height: 2vw;
+        border-radius: 100%;
+        box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+        background-color: rgba(255, 255, 255, 0.05);
+      }
+      info-column:nth-of-type(1) {
+        top: 7vw;
+        left: 24vw;
+        background-color: rgba(255, 255, 255, 0.12);
+      }
+      info-column:nth-of-type(2) {
+        top: 5vw;
+        left: 78vw;
+        background-color: rgba(255, 255, 255, 0.15);
+      }
+      info-column:nth-of-type(3) {
+        top: 18vw;
+        left: 22vw;
+        background-color: rgba(255, 255, 255, 0.07);
+      }
+      info-column:nth-of-type(4) {
+        top: 19vw;
+        left: 56vw;
+        background-color: rgba(255, 255, 255, 0.07);
+      }
+      info-column:nth-of-type(5) {
+        top: 22vw;
+        left: 96vw;
+        background-color: rgba(255, 255, 255, 0.16);
+      }
+      info-column:nth-of-type(6) {
+        top: 24vw;
+        left: 34vw;
+        background-color: rgba(255, 255, 255, 0.19);
+      }
+      info-column:nth-of-type(7) {
+        top: 7vw;
+        left: 60vw;
+        background-color: rgba(255, 255, 255, 0.15);
+      }
+      info-column:nth-of-type(8) {
+        top: 13vw;
+        left: 10vw;
+        background-color: rgba(255, 255, 255, 0.12);
+      }
     }
 
-    info-column {
-      display: block;
-      position: absolute;
-      width: 2vw;
-      height: 2vw;
-      border-radius: 100%;
-      box-shadow: 0 0 8px rgba(255,255,255,0.10);
-      background-color: rgba(255, 255, 255, 0.05);
-    }
-    info-column:nth-of-type(1) {
-      top: 7vw;
-      left: 24vw;
-      background-color: rgba(255,255,255,0.12);
-    }
-    info-column:nth-of-type(2) {
-      top: 5vw;
-      left: 78vw;
-      background-color: rgba(255,255,255,0.15);
-    }
-    info-column:nth-of-type(3) {
-      top: 18vw;
-      left: 22vw;
-      background-color: rgba(255,255,255,0.07);
-    }
-    info-column:nth-of-type(4) {
-      top: 19vw;
-      left: 56vw;
-      background-color: rgba(255,255,255,0.07);
-    }
-    info-column:nth-of-type(5) {
-      top: 22vw;
-      left: 96vw;
-      background-color: rgba(255,255,255,0.16);
-    }
-    info-column:nth-of-type(6) {
-      top: 24vw;
-      left: 34vw;
-      background-color: rgba(255,255,255,0.19);
-    }
-    info-column:nth-of-type(7) {
-      top: 7vw;
-      left: 60vw;
-      background-color: rgba(255,255,255,0.15);
-    }
-    info-column:nth-of-type(8) {
-      top: 13vw;
-      left: 10vw;
-      background-color: rgba(255,255,255,0.12);
+    @supports not (animation-timeline: view()) {
+      info-column {
+        display: block;
+        position: relative;
+        width: 60vw;
+        margin-left: 20vw;
+        margin-bottom: 5vw;
+        height: 10vw;
+        box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+        background-color: rgba(255, 255, 255, 0.05);
+      }
     }
   }
 }
