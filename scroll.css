@@ -190,12 +190,13 @@ main {
     }
     30%,
     100% {
-      top: 42vw;
-      left: 44vw;
+      left: 16.7vw;
+      top: calc(100% - 12.53vw);
       width: 2vw;
       height: 2vw;
-      border-radius: 0%;
+      border-radius: 0;
       box-shadow: none;
+      background-color: white;
     }
   }
   building-block:nth-of-type(1) {
@@ -251,5 +252,65 @@ main {
     top: 13vw;
     left: 10vw;
     background-color: rgba(255, 255, 255, 0.12);
+  }
+
+  @keyframes building-blocks {
+    0% {
+      bottom: 15vw;
+      left: 17vw;
+      width: 1vw;
+      height: 1vw;
+      opacity: 0;
+    }
+    30% {
+      bottom: 2vw;
+      left: 4vw;
+      width: 27vw;
+      height: 27vw;
+      opacity: 100%;
+    }
+    80% {
+      bottom: 2vw;
+      left: 4vw;
+      width: 27vw;
+      height: 27vw;
+      border-radius: 50%;
+    }
+    100% {
+      bottom: 0;
+      left: -1vw;
+      width: 104vw;
+      height: 14.8vw;
+      border-radius: 0;
+    }
+  }
+  building-blocks {
+    animation: building-blocks ease-out;
+    animation-timeline: scroll(root);
+  }
+
+  building-blocks {
+    display: block;
+    position: fixed;
+    bottom: 7vw;
+    left: 9vw;
+    border-radius: 50%;
+    width: 17vw;
+    height: 17vw;
+    background-image: repeating-linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.5) 0px,
+        rgba(255, 255, 255, 0.5) 1px,
+        transparent 0.068vw,
+        transparent 2.11vw
+      ),
+      repeating-linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0.5) 0px,
+        rgba(255, 255, 255, 0.5) 1px,
+        transparent 0.068vw,
+        transparent 2.11vw
+      );
+    background-position: top left -1px;
   }
 }
