@@ -32,30 +32,51 @@ body {
   margin: 0;
   padding: 0;
 
-  background-image: url("img/noise.png"),
-    repeating-linear-gradient(
-      6deg,
-      rgba(56, 61, 82, 0.35) 0px,
-      rgba(82, 82, 82, 0.35) 0.068vw,
-      transparent 0.068vw,
-      transparent 2.11vw
-    ),
-    repeating-linear-gradient(
-      96deg,
-      rgba(56, 61, 82, 0.35) 0px,
-      rgba(56, 61, 82, 0.35) 0.068vw,
-      transparent 0.068vw,
-      transparent 2.11vw
-    ),
-    radial-gradient(
-      circle at center,
-      rgb(0, 0, 0, 0%) 0%,
-      rgb(0, 0, 0, 25%),
-      85%,
-      rgb(0, 0, 0, 100%) 100%
-    ),
-    linear-gradient(90deg, rgb(39, 43, 58), rgb(39, 43, 58));
-  background-attachment: fixed;
+  @supports not (background-attachment: fixed) {
+    background-color: rgb(29, 32, 43);
+    background-image: url("img/noise.png"),
+      repeating-linear-gradient(
+        6deg,
+        rgba(56, 61, 82, 0.35) 0px,
+        rgba(82, 82, 82, 0.35) 0.068vw,
+        transparent 0.068vw,
+        transparent 2.11vw
+      ),
+      repeating-linear-gradient(
+        96deg,
+        rgba(56, 61, 82, 0.35) 0px,
+        rgba(56, 61, 82, 0.35) 0.068vw,
+        transparent 0.068vw,
+        transparent 2.11vw
+      );
+  }
+
+  @supports (background-attachment: fixed) {
+    background-image: url("img/noise.png"),
+      repeating-linear-gradient(
+        6deg,
+        rgba(56, 61, 82, 0.35) 0px,
+        rgba(82, 82, 82, 0.35) 0.068vw,
+        transparent 0.068vw,
+        transparent 2.11vw
+      ),
+      repeating-linear-gradient(
+        96deg,
+        rgba(56, 61, 82, 0.35) 0px,
+        rgba(56, 61, 82, 0.35) 0.068vw,
+        transparent 0.068vw,
+        transparent 2.11vw
+      ),
+      radial-gradient(
+        circle at center,
+        rgb(0, 0, 0, 0%) 0%,
+        rgb(0, 0, 0, 25%),
+        85%,
+        rgb(0, 0, 0, 100%) 100%
+      ),
+      linear-gradient(90deg, rgb(39, 43, 58), rgb(39, 43, 58));
+    background-attachment: fixed;
+  }
 
   overscroll-behavior: none;
 }
@@ -307,6 +328,30 @@ main {
     top: 13vw;
     left: 10vw;
     background-color: rgba(255, 255, 255, 0.12);
+  }
+
+  @keyframes info-spotlight-one {
+    0%,
+    15%,
+    25% {
+      top: 7vw;
+      left: 24vw;
+      width: 2vw;
+      height: 2vw;
+      background-color: rgba(255, 255, 255, 0.12);
+    }
+    20% {
+      top: calc(50% - 10vw);
+      left: calc(50% - 10vw);
+      width: 20vw;
+      height: 20vw;
+      background-color: rgba(255, 255, 255, 0.01);
+      box-shadow: 0 0 24px rgba(255, 255, 255, 0.04);
+    }
+  }
+  info-column:nth-of-type(1) {
+    animation: info-spotlight-one ease-out;
+    animation-timeline: scroll(root);
   }
 
   @keyframes building-blocks {
