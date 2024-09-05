@@ -9,6 +9,8 @@ body {
   /* Ref: Valhalla */
   /* https://colors.dopely.top/color-pedia/282c3c */
   --primary-text-color: #eaeaea;
+  --blocks-top: calc(100vh - 29vw);
+  --block-height: 2vw;
 
   /* System Font Stack */
   font-family:
@@ -182,16 +184,17 @@ main {
     background-color: rgba(255, 255, 255, 0.37);
   }
 
+  /* Block #1 */
   @keyframes building-block-one {
     0% {
       top: 21vw;
       left: 88vw;
       border-radius: 100%;
     }
-    30%,
+    20%,
     100% {
       left: 16.7vw;
-      top: calc(100% - 12.53vw);
+      top: calc(var(--blocks-top) + 4 * var(--block-height));
       width: 2vw;
       height: 2vw;
       border-radius: 0;
@@ -201,6 +204,58 @@ main {
   }
   building-block:nth-of-type(1) {
     animation: building-block-one ease-out;
+    animation-timeline: scroll(root);
+  }
+
+  /* Block #2 */
+  @keyframes building-block-two {
+    0%,
+    20% {
+      top: 18vw;
+      left: 80vw;
+      width: 1vw;
+      height: 1vw;
+      border-radius: 100%;
+    }
+    25%,
+    100% {
+      left: 8.25vw;
+      top: calc(100% - 23.1vw);
+      width: 2vw;
+      height: 2vw;
+      border-radius: 0;
+      box-shadow: none;
+      background-color: white;
+    }
+  }
+  building-block:nth-of-type(2) {
+    animation: building-block-two ease-out;
+    animation-timeline: scroll(root);
+  }
+
+  /* Block #3 */
+  @keyframes building-block-three {
+    0%,
+    25% {
+      top: 3vw;
+      left: 53vw;
+      width: 1vw;
+      height: 1vw;
+      border-radius: 100%;
+    }
+    30%,
+    100% {
+      left: 18.77vw;
+      top: calc(100% - 16.76vw);
+      width: 2vw;
+      height: 2vw;
+      border-radius: 0;
+      box-shadow: none;
+      background-color: white;
+    }
+  }
+  building-block:nth-of-type(3) {
+    animation: building-block-three ease-out;
     animation-timeline: scroll(root);
   }
 
@@ -262,15 +317,15 @@ main {
       height: 1vw;
       opacity: 0;
     }
-    30% {
-      bottom: 2vw;
+    20% {
+      top: var(--blocks-top);
       left: 4vw;
       width: 27vw;
       height: 27vw;
       opacity: 100%;
     }
     80% {
-      bottom: 2vw;
+      top: var(--blocks-top);
       left: 4vw;
       width: 27vw;
       height: 27vw;
