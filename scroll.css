@@ -114,7 +114,7 @@ main {
   page-three,
   page-four,
   page-five,
-  page-six,
+  skills-cloud,
   page-seven,
   page-eight {
     display: flex;
@@ -123,6 +123,28 @@ main {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+  }
+
+  skills-cloud {
+    h1,
+    h2 {
+      width: max(50vw, 320px);
+      display: flex;
+      justify-content: space-around;
+      font-size: max(1.6rem, 3vw);
+      font-weight: 600;
+      span {
+        padding: 0.2vw 1.2vw;
+        border-radius: 0.8vw;
+        border: 1px solid rgba(56, 61, 82, 1);
+      }
+    }
+
+    h2 {
+      margin-top: 1.2vw;
+      font-weight: 500;
+      font-size: max(0.6rem, 1.2vw);
+    }
   }
 }
 
