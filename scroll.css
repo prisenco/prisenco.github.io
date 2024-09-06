@@ -93,7 +93,7 @@ main {
   h1 {
     width: 100%;
     text-align: center;
-    letter-spacing: 2%;
+    letter-spacing: 0.16vw;
     font-weight: 800;
     font-size: max(4rem, 6vw);
     text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
@@ -102,7 +102,7 @@ main {
   h2 {
     width: 100%;
     text-align: center;
-    letter-spacing: 3.5%;
+    letter-spacing: 0.32vw;
     font-weight: 500;
     font-size: max(1.6rem, 2vw);
     text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
