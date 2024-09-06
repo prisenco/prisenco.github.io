@@ -86,7 +86,10 @@ html {
   overscroll-behavior: none;
 }
 
-header {
+main {
+  display: block;
+  height: 800vh;
+
   h1 {
     width: 100%;
     text-align: center;
@@ -95,7 +98,6 @@ header {
     font-size: max(4rem, 6vw);
     text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
     margin: 0;
-    margin-top: 25vw;
   }
   h2 {
     width: 100%;
@@ -105,13 +107,23 @@ header {
     font-size: max(1.6rem, 2vw);
     text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
     margin: 0;
-    margin-bottom: 25vw;
   }
-}
 
-main {
-  display: block;
-  height: 400vw;
+  page-one,
+  page-two,
+  page-three,
+  page-four,
+  page-five,
+  page-six,
+  page-seven,
+  page-eight {
+    display: flex;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
 }
 
 @supports (animation-timeline: view()) {
