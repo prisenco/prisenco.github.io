@@ -110,8 +110,8 @@ main {
   }
 
   page-one,
-  page-two,
   my-location,
+  page-three,
   page-four,
   page-five,
   skills-cloud,
@@ -473,6 +473,12 @@ main {
         color: white;
         text-decoration: none;
         font-size: min(2.4vw, 1rem);
+      }
+      a[href="#contact"] {
+        background-color: rgba(56, 61, 82, 1);
+        border: 1px solid white;
+        padding: 0.5vw 1vw;
+        border-radius: 0.6vw;
       }
     }
   }
