@@ -87,14 +87,21 @@ html {
 }
 
 header {
-  img {
-    position: fixed;
-    top: 2vw;
-    left: 2vw;
-    width: max(32px, 2.2vw);
-    height: max(32px, 2.2vw);
-    border-radius: 100%;
+  info-column:nth-of-type(1) {
+    border-radius: 4vw;
+    padding: 0 1vw;
+    color: rgb(56, 61, 82);
+    background-color: white;
     box-shadow: 0 0 0.8vw rgba(255, 255, 255, 0.4);
+    img {
+      width: max(32px, 2.2vw);
+      height: max(32px, 2.2vw);
+    }
+    a {
+      color: inherit;
+      font-weight: 600;
+      text-decoration: none;
+    }
   }
 }
 
@@ -493,5 +500,28 @@ main {
         border-radius: 0.6vw;
       }
     }
+  }
+}
+
+/* Temp hamburger menu */
+
+hamburger-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  position: fixed;
+  top: 2vw;
+  right: 2vw;
+
+  height: 2vw;
+  width: 1.6vw;
+
+  hamburger-menu-line {
+    height: 0.1vw;
+    width: 100%;
+    background-color: white;
+    margin-bottom: 0.4vw;
   }
 }
