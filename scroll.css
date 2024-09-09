@@ -502,26 +502,3 @@ main {
     }
   }
 }
-
-/* Temp hamburger menu */
-
-hamburger-menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-
-  position: fixed;
-  top: 2vw;
-  right: 2vw;
-
-  height: 2vw;
-  width: 1.6vw;
-
-  hamburger-menu-line {
-    height: 0.1vw;
-    width: 100%;
-    background-color: white;
-    margin-bottom: 0.4vw;
-  }
-}
