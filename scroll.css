@@ -182,7 +182,7 @@ main {
     background-color: rgba(255, 255, 255, 0.88);
   }
   building-block:nth-of-type(3) {
-    top: 3vw;
+    top: 6vw;
     left: 53vw;
     background-color: rgba(255, 255, 255, 0.94);
   }
@@ -310,7 +310,7 @@ main {
   @keyframes building-block-three {
     0%,
     25% {
-      top: 3vw;
+      top: 6vw;
       left: 53vw;
       width: 1vw;
       height: 1vw;
@@ -409,18 +409,16 @@ main {
 
   @keyframes building-blocks {
     0% {
-      bottom: 15vw;
-      left: 17vw;
-      width: 1vw;
-      height: 1vw;
-      opacity: 0;
+      top: 90vh;
+      left: -32vw;
+      width: 27vw;
+      height: 27vw;
     }
     20% {
       top: var(--blocks-top);
       left: 4vw;
       width: 27vw;
       height: 27vw;
-      opacity: 100%;
     }
     80% {
       top: var(--blocks-top);
@@ -466,6 +464,34 @@ main {
       );
     background-position: top left -1px;
   }
+
+  @keyframes page-one-fade {
+    0% {
+      opacity: 1;
+    }
+    6.25%,
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes my-location-fade {
+    0%,
+    15.625% {
+      opacity: 1;
+    }
+    21%,
+    100% {
+      opacity: 0;
+    }
+  }
+  page-one {
+    animation: page-one-fade ease-out;
+    animation-timeline: scroll(root);
+  }
+  my-location {
+    animation: my-location-fade ease-out;
+    animation-timeline: scroll(root);
+  }
 }
 
 nav {
@@ -481,7 +507,7 @@ nav {
     font-size: min(2.4vw, 1rem);
     padding: 0.5vw 0;
   }
-  a[href="#contact"] {
+  a[href="/lets-build"] {
     background-color: rgba(56, 61, 82, 1);
     border: 1px solid white;
     padding: 0.5vw 1vw;
