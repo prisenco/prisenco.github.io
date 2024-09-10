@@ -508,22 +508,22 @@ nav {
     font-size: min(2.4vw, 1rem);
     padding: 0.5vw 0;
   }
-  a[href="/lets-build"] {
+  a[href="#"] {
     background-color: rgba(56, 61, 82, 1);
     border: 1px solid white;
-    padding: 0.5vw 1vw;
-    border-radius: 4vw;
-  }
-  a[href="#"] {
-    border-radius: 4vw;
     padding: 0 1vw;
-    color: rgb(56, 61, 82);
-    background-color: white;
-    box-shadow: 0 0 0.8vw rgba(255, 255, 255, 0.4);
+    border-radius: 4vw;
     img {
       width: max(32px, 2.2vw);
       height: max(32px, 2.2vw);
     }
+  }
+  a[href="/lets-build"] {
+    border-radius: 4vw;
+    padding: 0.5vw 1vw;
+    color: rgb(56, 61, 82);
+    background-color: white;
+    box-shadow: 0 0 0.8vw rgba(255, 255, 255, 0.4);
     font-weight: 600;
     text-decoration: none;
   }
