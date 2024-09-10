@@ -501,6 +501,7 @@ nav {
   width: 100%;
   justify-content: center;
   gap: 2vw;
+  z-index: 1;
   a {
     color: white;
     text-decoration: none;
