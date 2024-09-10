@@ -86,28 +86,12 @@ html {
   overscroll-behavior: none;
 }
 
-header {
-  info-column:nth-of-type(1) {
-    border-radius: 4vw;
-    padding: 0 1vw;
-    color: rgb(56, 61, 82);
-    background-color: white;
-    box-shadow: 0 0 0.8vw rgba(255, 255, 255, 0.4);
-    img {
-      width: max(32px, 2.2vw);
-      height: max(32px, 2.2vw);
-    }
-    a {
-      color: inherit;
-      font-weight: 600;
-      text-decoration: none;
-    }
-  }
-}
-
 main {
   display: block;
+  width: min(80vw, 880px);
   height: 800vh;
+  margin: 0 auto;
+  background-color: rgba(255, 0, 0, 0.1);
 
   h1 {
     width: 100%;
@@ -257,6 +241,11 @@ main {
     left: 41vw;
     background-color: rgba(255, 255, 255, 0.37);
   }
+  building-block:nth-of-type(17) {
+    top: 7vw;
+    left: 60vw;
+    background-color: rgba(255, 255, 255, 0.15);
+  }
 
   /* Block #1 */
   @keyframes building-block-one {
@@ -341,11 +330,6 @@ main {
     border-radius: 100%;
     box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
     background-color: rgba(255, 255, 255, 0.05);
-    color: rgba(255, 255, 255, 0);
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
   }
   info-column:nth-of-type(1) {
     top: 12vh;
@@ -378,11 +362,6 @@ main {
     background-color: rgba(255, 255, 255, 0.19);
   }
   info-column:nth-of-type(7) {
-    top: 7vw;
-    left: 60vw;
-    background-color: rgba(255, 255, 255, 0.15);
-  }
-  info-column:nth-of-type(8) {
     top: 13vw;
     left: 10vw;
     background-color: rgba(255, 255, 255, 0.12);
@@ -479,26 +458,35 @@ main {
   }
 }
 
-@supports not (animation-timeline: view()) {
-  info-columns {
-    display: flex;
-    position: fixed;
-    top: 4vh;
-    width: 100%;
-    justify-content: center;
-    gap: 2vw;
-    info-column {
-      a {
-        color: white;
-        text-decoration: none;
-        font-size: min(2.4vw, 1rem);
-      }
-      a[href="#contact"] {
-        background-color: rgba(56, 61, 82, 1);
-        border: 1px solid white;
-        padding: 0.5vw 1vw;
-        border-radius: 0.6vw;
-      }
+nav {
+  display: flex;
+  position: fixed;
+  top: 4vh;
+  width: 100%;
+  justify-content: center;
+  gap: 2vw;
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: min(2.4vw, 1rem);
+  }
+  a[href="#contact"] {
+    background-color: rgba(56, 61, 82, 1);
+    border: 1px solid white;
+    padding: 0.5vw 1vw;
+    border-radius: 4vw;
+  }
+  a[href="#"] {
+    border-radius: 4vw;
+    padding: 0 1vw;
+    color: rgb(56, 61, 82);
+    background-color: white;
+    box-shadow: 0 0 0.8vw rgba(255, 255, 255, 0.4);
+    img {
+      width: max(32px, 2.2vw);
+      height: max(32px, 2.2vw);
     }
+    font-weight: 600;
+    text-decoration: none;
   }
 }
