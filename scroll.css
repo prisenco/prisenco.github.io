@@ -91,10 +91,9 @@ main {
   width: min(80vw, 880px);
   height: 800vh;
   margin: 0 auto;
-  /* background-color: rgba(255, 0, 0, 0.1); */
 
   h1 {
-    width: 100%;
+    width: 80%;
     text-align: center;
     letter-spacing: 0.16vw;
     font-weight: 800;
@@ -102,12 +101,24 @@ main {
     text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
     margin: 0;
   }
+
   h2 {
-    width: 100%;
+    width: 80%;
     text-align: center;
     letter-spacing: clamp(0.16rem, 0.32vw, 0.3rem);
     font-weight: 500;
     font-size: clamp(0.9rem, 1.6vw, 1.2rem);
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+    margin: 0 0 1vw 0;
+  }
+
+  h3 {
+    width: 60%;
+    text-align: center;
+    letter-spacing: clamp(0.04rem, 0.08vw, 0.075rem);
+    line-height: 1.4vw;
+    font-weight: 200;
+    font-size: clamp(0.6rem, 1.2vw, 0.9rem);
     text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
     margin: 0;
   }
@@ -577,25 +588,6 @@ nav {
       color: rgba(0, 0, 0, 0);
       width: 40px;
       height: 32px;
-    }
-    #nav-dropdown-toggle {
-      display: block;
-      width: 384px;
-      background: none;
-      color: var(--primary-text-color);
-      border: none;
-      cursor: pointer;
-    }
-    #nav-dropdown-items {
-      width: 384px;
-      flex-direction: column;
-      justify-content: center;
-      a {
-        width: 100%;
-      }
-    }
-    nav-items {
-      display: none;
     }
   }
 
