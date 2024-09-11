@@ -8,7 +8,7 @@
 body {
   /* Ref: Valhalla */
   /* https://colors.dopely.top/color-pedia/282c3c */
-  --primary-text-color: #efefef;
+  --primary-text-color: #eaeaea;
   --blocks-top: calc(100vh - 29vw);
   --block-height: 2vw;
 
@@ -502,7 +502,6 @@ main {
   }
 }
 
-/* Navigation */
 nav {
   display: flex;
   position: fixed;
@@ -517,42 +516,6 @@ nav {
     display: flex;
     justify-content: space-around;
     width: 768px;
-
-    label[for="nav-items-dropdown"],
-    input[name="nav-items-dropdown"] {
-      display: none;
-    }
-  }
-
-  #nav-dropdown-toggle {
-    display: none;
-  }
-
-  a {
-    color: var(--primary-text-color);
-    text-decoration: none;
-    font-size: min(2.4vw, 1rem);
-    padding: 0.5vw 0;
-  }
-  a[href="#"] {
-    background-color: rgba(56, 61, 82, 1);
-    border: 1px solid white;
-    padding: 0.5vw 1vw 0 1vw;
-    border-radius: 8px;
-    img {
-      width: min(16px, 2.2vw);
-      height: min(16px, 2.2vw);
-      margin-right: 4px;
-    }
-  }
-  a[href="/lets-build"] {
-    border-radius: 8px;
-    padding: 0.5vw 1vw;
-    color: rgb(56, 61, 82);
-    background-color: white;
-    box-shadow: 0 0 0.8vw rgba(255, 255, 255, 0.4);
-    font-weight: 600;
-    text-decoration: none;
   }
 
   @media (max-width: 1280px) {
@@ -578,24 +541,8 @@ nav {
       width: 40px;
       height: 32px;
     }
-    #nav-dropdown-toggle {
-      display: block;
-      width: 384px;
-      background: none;
-      color: var(--primary-text-color);
-      border: none;
-      cursor: pointer;
-    }
-    #nav-dropdown-items {
-      width: 384px;
-      flex-direction: column;
-      justify-content: center;
-      a {
-        width: 100%;
-      }
-    }
     nav-items {
-      display: none;
+      width: 384px;
     }
   }
 
@@ -620,5 +567,32 @@ nav {
         display: none;
       }
     }
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: min(2.4vw, 1rem);
+    padding: 0.5vw 0;
+  }
+  a[href="#"] {
+    background-color: rgba(56, 61, 82, 1);
+    border: 1px solid white;
+    padding: 0.5vw 1vw 0 1vw;
+    border-radius: 8px;
+    img {
+      width: min(16px, 2.2vw);
+      height: min(16px, 2.2vw);
+      margin-right: 4px;
+    }
+  }
+  a[href="/lets-build"] {
+    border-radius: 8px;
+    padding: 0.5vw 1vw;
+    color: rgb(56, 61, 82);
+    background-color: white;
+    box-shadow: 0 0 0.8vw rgba(255, 255, 255, 0.4);
+    font-weight: 600;
+    text-decoration: none;
   }
 }

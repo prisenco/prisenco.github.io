@@ -30,7 +30,7 @@
       color="#5bbad5"
     />
     <link rel="shortcut icon" href="/favicon/favicon.ico" />
-    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="msapplication-TileColor" content="#1d202b" />
     <meta name="msapplication-config" content="/favicon/browserconfig.xml" />
     <meta name="theme-color" content="#ffffff" />
   </head>
@@ -38,13 +38,34 @@
     <header>
       <nav>
         <a href="#"><img src="./img/prisenco.png" />Prisenco</a>
-        <a href="#location">Location</a>
-        <a href="#experience">Experience</a>
-        <a href="#fullstack">Fullstack</a>
-        <a href="#creative">Creative</a>
-        <a href="#skills">Skills</a>
-        <a href="/blog">Blog</a>
-        <a href="#contact">Contact</a>
+        <button
+          id="nav-dropdown-toggle"
+          popovertarget="nav-dropdown-items"
+          popovertargetaction="auto"
+        >
+          Go to &#9660;
+        </button>
+
+        <div id="nav-dropdown-items" popover>
+          <a href="#location">Location</a>
+          <a href="#experience">Experience</a>
+          <a href="#fullstack">Fullstack</a>
+          <a href="#creative">Creative</a>
+          <a href="#skills">Skills</a>
+          <a href="/blog">Blog</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <nav-items>
+          <a href="#location">Location</a>
+          <a href="#experience">Experience</a>
+          <a href="#fullstack">Fullstack</a>
+          <a href="#creative">Creative</a>
+          <a href="#skills">Skills</a>
+          <a href="/blog">Blog</a>
+          <a href="#contact">Contact</a>
+        </nav-items>
+
         <a href="/lets-build">Let's Build</a>
       </nav>
       <building-block></building-block>
