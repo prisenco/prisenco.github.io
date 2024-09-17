@@ -584,7 +584,17 @@ nav {
     width: 512px;
     left: calc(50% - (512px / 2));
     justify-content: space-around;
+    nav-items {
+      visibility: hidden;
+    }
+    a {
+      width: 12px;
+    }
+    a[href="/lets-build"] {
+      width: 100%;
+    }
     a[href="#"] {
+      width: 100%;
       color: rgba(0, 0, 0, 0);
       width: 40px;
       height: 32px;
