@@ -1,0 +1,3 @@
+[submodule "mit-ocw"]
+	path = mit-ocw
+	url = git@github.com:prisenco/mit-ocw.git
