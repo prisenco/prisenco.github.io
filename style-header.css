@@ -178,6 +178,10 @@ nav {
     }
     a[href="#"] {
       padding: 0.5 4vw;
+      img {
+        width: 16px;
+        height: 16px;
+      }
     }
     a[href="#build"] {
       padding: 0.5 6vw;
