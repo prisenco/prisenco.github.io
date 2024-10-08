@@ -1,0 +1,179 @@
+/* Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  /* Ref: Valhalla */
+  /* https://colors.dopely.top/color-pedia/282c3c */
+  --primary-text-color: #efefef;
+  --blocks-top: calc(100vh - 29vw);
+  --block-height: 2vw;
+
+  /* System Font Stack */
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    avenir next,
+    avenir,
+    segoe ui,
+    helvetica neue,
+    helvetica,
+    Cantarell,
+    Ubuntu,
+    roboto,
+    noto,
+    arial,
+    sans-serif;
+  color: var(--primary-text-color);
+
+  margin: 0;
+  padding: 0;
+
+  @supports not (background-attachment: fixed) {
+    background-color: rgb(29, 32, 43);
+    background-image: url("img/noise.png"),
+      repeating-linear-gradient(
+        6deg,
+        rgba(56, 61, 82, 0.35) 0px,
+        rgba(82, 82, 82, 0.35) 0.068vw,
+        transparent 0.068vw,
+        transparent 2.11vw
+      ),
+      repeating-linear-gradient(
+        96deg,
+        rgba(56, 61, 82, 0.35) 0px,
+        rgba(56, 61, 82, 0.35) 0.068vw,
+        transparent 0.068vw,
+        transparent 2.11vw
+      );
+  }
+
+  @supports (background-attachment: fixed) {
+    background-image: url("img/noise.png"),
+      repeating-linear-gradient(
+        6deg,
+        rgba(56, 61, 82, 0.35) 0px,
+        rgba(82, 82, 82, 0.35) 0.068vw,
+        transparent 0.068vw,
+        transparent 2.11vw
+      ),
+      repeating-linear-gradient(
+        96deg,
+        rgba(56, 61, 82, 0.35) 0px,
+        rgba(56, 61, 82, 0.35) 0.068vw,
+        transparent 0.068vw,
+        transparent 2.11vw
+      ),
+      radial-gradient(
+        circle at center,
+        rgb(0, 0, 0, 0%) 0%,
+        rgb(0, 0, 0, 25%),
+        85%,
+        rgb(0, 0, 0, 100%) 100%
+      ),
+      linear-gradient(90deg, rgb(39, 43, 58), rgb(39, 43, 58));
+    background-attachment: fixed;
+  }
+
+  overscroll-behavior: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  overscroll-behavior: none;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  position: fixed;
+  top: clamp(16px, 2vh, 2vw);
+  width: 1152px;
+  left: calc(50% - (1152px / 2));
+  justify-content: space-between;
+  z-index: 1;
+
+  nav-items {
+    display: flex;
+    justify-content: space-around;
+    width: 768px;
+
+    label[for="nav-items-dropdown"],
+    input[name="nav-items-dropdown"] {
+      display: none;
+    }
+  }
+
+  a {
+    color: var(--primary-text-color);
+    text-decoration: none;
+    font-size: min(2.4vw, 1rem);
+    padding: 0.5vw 0;
+  }
+  a[href="#"] {
+    background-color: rgba(56, 61, 82, 1);
+    border: 1px solid white;
+    padding: 0.5vw 1vw 0 1vw;
+    min-width: fit-content;
+    border-radius: 8px;
+    img {
+      width: min(16px, 2.2vw);
+      height: min(16px, 2.2vw);
+      margin-right: 4px;
+    }
+  }
+  a[href="#lets-build"],
+  a[href="#build"] {
+    border-radius: 8px;
+    padding: 0.5vw 1vw;
+    min-height: fit-content;
+    min-width: fit-content;
+    color: rgb(56, 61, 82);
+    background-color: white;
+    box-shadow: 0 0 0.8vw rgba(255, 255, 255, 0.4);
+    font-weight: 600;
+    text-decoration: none;
+  }
+  a[href="#build"] {
+    display: none;
+  }
+
+  @media (max-width: 1280px) {
+    width: 896px;
+    left: calc(50% - (896px / 2));
+    justify-content: space-around;
+    nav-items {
+      width: 640px;
+    }
+  }
+
+  @media (max-width: 992px) {
+    width: 672px;
+    left: calc(50% - (672px / 2));
+    justify-content: space-around;
+  }
+
+  @media (max-width: 736px) {
+    width: 95%;
+    left: 2.5%;
+    justify-content: space-around;
+    nav-items {
+      width: fill-content;
+    }
+    a[href="#build"] {
+      display: block;
+    }
+    a[href="#lets-build"] {
+      display: none;
+    }
+  }
+
+  @media (max-width: 500px) {
+    nav-items {
+      margin: 0 5%;
+    }
+  }
+}

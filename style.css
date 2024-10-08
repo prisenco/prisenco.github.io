@@ -89,7 +89,7 @@ html {
 main {
   display: block;
   width: min(80vw, 880px);
-  height: 800vh;
+  height: fit-content;
   margin: 0 auto;
 
   h1 {
@@ -139,9 +139,7 @@ main {
   page-four,
   page-five,
   skills-cloud,
-  page-seven,
-  page-eight,
-  page-nine {
+  page-six {
     display: flex;
     height: 100vh;
     display: flex;
@@ -150,7 +148,7 @@ main {
     flex-direction: column;
   }
 
-  page-nine {
+  page-six {
     h2 {
       a {
         text-decoration: none;
@@ -572,7 +570,7 @@ nav {
       margin-right: 4px;
     }
   }
-  a[href="/lets-build"] {
+  a[href="#build"] {
     border-radius: 8px;
     padding: 0.5vw 1vw;
     color: rgb(56, 61, 82);
@@ -606,7 +604,7 @@ nav {
     a {
       width: 12px;
     }
-    a[href="/lets-build"] {
+    a[href="#build"] {
       width: 100%;
     }
     a[href="#"] {
@@ -626,7 +624,7 @@ nav {
       width: 40px;
       height: 32px;
     }
-    a[href="/lets-build"] {
+    a[href="#build"] {
       width: 96px;
       font-size: 4vw;
       text-align: center;
