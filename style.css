@@ -536,7 +536,6 @@ nav {
   left: calc(50% - (1152px / 2));
   justify-content: space-between;
   z-index: 1;
-  /* background-color: rgba(255, 255, 0, 0.1); */
 
   nav-items {
     display: flex;
@@ -549,10 +548,6 @@ nav {
     }
   }
 
-  #nav-dropdown-toggle {
-    display: none;
-  }
-
   a {
     color: var(--primary-text-color);
     text-decoration: none;
@@ -563,6 +558,7 @@ nav {
     background-color: rgba(56, 61, 82, 1);
     border: 1px solid white;
     padding: 0.5vw 1vw 0 1vw;
+    min-width: fit-content;
     border-radius: 8px;
     img {
       width: min(16px, 2.2vw);
@@ -570,71 +566,69 @@ nav {
       margin-right: 4px;
     }
   }
+  a[href="#lets-build"],
   a[href="#build"] {
     border-radius: 8px;
     padding: 0.5vw 1vw;
+    min-height: fit-content;
+    min-width: fit-content;
     color: rgb(56, 61, 82);
     background-color: white;
     box-shadow: 0 0 0.8vw rgba(255, 255, 255, 0.4);
     font-weight: 600;
     text-decoration: none;
   }
+  a[href="#build"] {
+    display: none;
+  }
 
   @media (max-width: 1280px) {
     width: 896px;
     left: calc(50% - (896px / 2));
     justify-content: space-around;
-    a[href="#"] {
-      color: rgba(0, 0, 0, 0);
-      width: 40px;
-      height: 32px;
-    }
     nav-items {
       width: 640px;
     }
   }
 
-  @media (max-width: 896px) {
-    width: 512px;
-    left: calc(50% - (512px / 2));
+  @media (max-width: 992px) {
+    width: 672px;
+    left: calc(50% - (672px / 2));
+    justify-content: space-around;
+  }
+
+  @media (max-width: 736px) {
+    width: 95%;
+    left: 2.5%;
     justify-content: space-around;
     nav-items {
-      visibility: hidden;
-    }
-    a {
-      width: 12px;
+      width: fill-content;
     }
     a[href="#build"] {
-      width: 100%;
+      display: block;
     }
-    a[href="#"] {
-      width: 100%;
-      color: rgba(0, 0, 0, 0);
-      width: 40px;
-      height: 32px;
+    a[href="#lets-build"] {
+      display: none;
     }
   }
 
-  @media (max-width: 512px) {
-    width: 384px;
-    left: calc(50% - (384px / 2));
-    justify-content: space-around;
+  @media (max-width: 500px) {
+    a[href="#"],
+    a[href="#build"] {
+      font-size: 1.2rem;
+    }
     a[href="#"] {
-      color: rgba(0, 0, 0, 0);
-      width: 40px;
-      height: 32px;
+      padding: 0.5vw 4vw;
+      img {
+        width: 16px;
+        height: 16px;
+      }
     }
     a[href="#build"] {
-      width: 96px;
-      font-size: 4vw;
-      text-align: center;
+      padding: 0.5vw 6vw;
     }
     nav-items {
-      opacity: 0;
-      width: 128px;
-      a {
-        display: none;
-      }
+      display: none;
     }
   }
 }
