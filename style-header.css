@@ -172,8 +172,18 @@ nav {
   }
 
   @media (max-width: 500px) {
+    a[href="#"],
+    a[href="#build"] {
+      font-size: 1.2rem;
+    }
+    a[href="#"] {
+      padding: 0.5 4vw;
+    }
+    a[href="#build"] {
+      padding: 0.5 6vw;
+    }
     nav-items {
-      margin: 0 5%;
+      display: none;
     }
   }
 }
