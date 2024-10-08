@@ -571,8 +571,7 @@ nav {
       margin-right: 4px;
     }
   }
-  a[href="#lets-build"],
-  a[href="#build"] {
+  a[href="#lets-build"] {
     border-radius: 8px;
     padding: 0.5vw 1vw;
     min-height: fit-content;
@@ -583,7 +582,7 @@ nav {
     font-weight: 600;
     text-decoration: none;
   }
-  a[href="#build"] {
+  a[href="#lets-build"].mobile {
     display: none;
   }
 
@@ -609,17 +608,17 @@ nav {
     nav-items {
       width: fill-content;
     }
-    a[href="#build"] {
+    a[href="#lets-build"].mobile {
       display: block;
     }
-    a[href="#lets-build"] {
+    a[href="#lets-build"].desktop {
       display: none;
     }
   }
 
   @media (max-width: 500px) {
     a[href="#"],
-    a[href="#build"] {
+    a[href="#lets-build"].mobile {
       font-size: 1.2rem;
     }
     a[href="#"] {
@@ -629,7 +628,7 @@ nav {
         height: 16px;
       }
     }
-    a[href="#build"] {
+    a[href="#lets-build"].mobile {
       padding: 0.5vw 6vw;
     }
     nav-items {
