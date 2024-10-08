@@ -140,13 +140,29 @@ main {
   page-five,
   skills-cloud,
   page-seven,
-  page-eight {
+  page-eight,
+  page-nine {
     display: flex;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+  }
+
+  page-nine {
+    h2 {
+      a {
+        text-decoration: none;
+        color: white;
+        margin-right: 16px;
+      }
+      img {
+        position: relative;
+        top: 6px;
+        margin-right: 8px;
+      }
+    }
   }
 
   skills-cloud {
