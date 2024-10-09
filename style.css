@@ -255,8 +255,8 @@ building-block:nth-of-type(10) {
   background-color: rgba(255, 255, 255, 0.28);
 }
 building-block:nth-of-type(11) {
-  left: 56vw;
-  top: 49vh;
+  left: 66vw;
+  top: 59vh;
   background-color: rgba(255, 255, 255, 0.36);
 }
 building-block:nth-of-type(12) {
@@ -276,7 +276,7 @@ building-block:nth-of-type(14) {
 }
 building-block:nth-of-type(15) {
   left: 28vw;
-  top: 50vh;
+  top: 60vh;
   background-color: rgba(255, 255, 255, 0.28);
 }
 building-block:nth-of-type(16) {
