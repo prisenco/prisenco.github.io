@@ -746,8 +746,8 @@ info-column:nth-of-type(7) {
   @keyframes building-block-fourteen {
     0%,
     14.5% {
-      left: 90vw;
-      top: 35vh;
+      left: 19vw;
+      top: 82vh;
       width: 1vw;
       height: 1vw;
       border-radius: 100%;
@@ -777,8 +777,8 @@ info-column:nth-of-type(7) {
   @keyframes building-block-fifteen {
     0%,
     15% {
-      left: 90vw;
-      top: 35vh;
+      left: 28vw;
+      top: 60vh;
       width: 1vw;
       height: 1vw;
       border-radius: 100%;
@@ -808,8 +808,8 @@ info-column:nth-of-type(7) {
   @keyframes building-block-sixteen {
     0%,
     15.5% {
-      left: 90vw;
-      top: 35vh;
+      left: 81vw;
+      top: 31vh;
       width: 1vw;
       height: 1vw;
       border-radius: 100%;
@@ -839,8 +839,8 @@ info-column:nth-of-type(7) {
   @keyframes building-block-seventeen {
     0%,
     16% {
-      left: 90vw;
-      top: 35vh;
+      left: 74vw;
+      top: 42vh;
       width: 1vw;
       height: 1vw;
       border-radius: 100%;
