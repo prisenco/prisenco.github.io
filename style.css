@@ -192,103 +192,152 @@ main {
   }
 }
 
-@supports (animation-timeline: view()) {
-  building-block {
-    display: block;
-    position: fixed;
-    width: 1vw;
-    height: 1vw;
-    background-color: rgba(255, 255, 255, 0.75);
-    box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
-    border-radius: 100%;
-  }
-  building-block:nth-of-type(1) {
-    top: 21vw;
-    left: 88vw;
-    background-color: rgba(255, 255, 255, 0.53);
-  }
-  building-block:nth-of-type(2) {
-    top: 18vw;
-    left: 80vw;
-    background-color: rgba(255, 255, 255, 0.88);
-  }
-  building-block:nth-of-type(3) {
-    top: 6vw;
-    left: 53vw;
-    background-color: rgba(255, 255, 255, 0.94);
-  }
-  building-block:nth-of-type(4) {
-    top: 5vw;
-    left: 89vw;
-    background-color: rgba(255, 255, 255, 0.54);
-  }
-  building-block:nth-of-type(5) {
-    top: 17vw;
-    left: 52vw;
-    background-color: rgba(255, 255, 255, 0.43);
-  }
-  building-block:nth-of-type(6) {
-    top: 2vw;
-    left: 92vw;
-    background-color: rgba(255, 255, 255, 0.76);
-  }
-  building-block:nth-of-type(7) {
-    top: 21vw;
-    left: 76vw;
-    background-color: rgba(255, 255, 255, 0.32);
-  }
-  building-block:nth-of-type(8) {
-    top: 19vw;
-    left: 31vw;
-    background-color: rgba(255, 255, 255, 0.68);
-  }
-  building-block:nth-of-type(9) {
-    top: 9vw;
-    left: 77vw;
-    background-color: rgba(255, 255, 255, 0.26);
-  }
-  building-block:nth-of-type(10) {
-    top: 10vw;
-    left: 7vw;
-    background-color: rgba(255, 255, 255, 0.56);
-  }
-  building-block:nth-of-type(11) {
-    top: 13vw;
-    left: 41vw;
-    background-color: rgba(255, 255, 255, 0.73);
-  }
-  building-block:nth-of-type(12) {
-    top: 14vw;
-    left: 73vw;
-    background-color: rgba(255, 255, 255, 0.69);
-  }
-  building-block:nth-of-type(13) {
-    top: 13vw;
-    left: 22vw;
-    background-color: rgba(255, 255, 255, 0.38);
-  }
-  building-block:nth-of-type(14) {
-    top: 5vw;
-    left: 19vw;
-    background-color: rgba(255, 255, 255, 0.68);
-  }
-  building-block:nth-of-type(15) {
-    top: 4vw;
-    left: 72vw;
-    background-color: rgba(255, 255, 255, 0.56);
-  }
-  building-block:nth-of-type(16) {
-    top: 5vw;
-    left: 41vw;
-    background-color: rgba(255, 255, 255, 0.37);
-  }
-  building-block:nth-of-type(17) {
-    top: 7vw;
-    left: 60vw;
-    background-color: rgba(255, 255, 255, 0.15);
-  }
+/*
+*/
 
+building-block {
+  display: block;
+  position: fixed;
+  width: 1vw;
+  height: 1vw;
+  background-color: rgba(255, 255, 255, 0.75);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+  border-radius: 100%;
+}
+building-block:nth-of-type(1) {
+  left: 88vw;
+  top: 63vh;
+  background-color: rgba(255, 255, 255, 0.27);
+}
+building-block:nth-of-type(2) {
+  left: 51vw;
+  top: 36vh;
+  background-color: rgba(255, 255, 255, 0.44);
+}
+building-block:nth-of-type(3) {
+  left: 63vw;
+  top: 72vh;
+  background-color: rgba(255, 255, 255, 0.57);
+}
+building-block:nth-of-type(4) {
+  left: 7vw;
+  top: 64vh;
+  background-color: rgba(255, 255, 255, 0.26);
+}
+building-block:nth-of-type(5) {
+  left: 52vw;
+  top: 82vh;
+  background-color: rgba(255, 255, 255, 0.21);
+}
+building-block:nth-of-type(6) {
+  left: 21vw;
+  top: 45vh;
+  background-color: rgba(255, 255, 255, 0.38);
+}
+building-block:nth-of-type(7) {
+  left: 35vw;
+  top: 79vh;
+  background-color: rgba(255, 255, 255, 0.18);
+}
+building-block:nth-of-type(8) {
+  left: 26vw;
+  top: 22vh;
+  background-color: rgba(255, 255, 255, 0.34);
+}
+building-block:nth-of-type(9) {
+  left: 71vw;
+  top: 17vh;
+  background-color: rgba(255, 255, 255, 0.13);
+}
+building-block:nth-of-type(10) {
+  left: 74vw;
+  top: 91vh;
+  background-color: rgba(255, 255, 255, 0.28);
+}
+building-block:nth-of-type(11) {
+  left: 56vw;
+  top: 49vh;
+  background-color: rgba(255, 255, 255, 0.36);
+}
+building-block:nth-of-type(12) {
+  left: 90vw;
+  top: 35vh;
+  background-color: rgba(255, 255, 255, 0.34);
+}
+building-block:nth-of-type(13) {
+  left: 42vw;
+  top: 19vh;
+  background-color: rgba(255, 255, 255, 0.19);
+}
+building-block:nth-of-type(14) {
+  left: 19vw;
+  top: 82vh;
+  background-color: rgba(255, 255, 255, 0.34);
+}
+building-block:nth-of-type(15) {
+  left: 28vw;
+  top: 50vh;
+  background-color: rgba(255, 255, 255, 0.28);
+}
+building-block:nth-of-type(16) {
+  left: 81vw;
+  top: 31vh;
+  background-color: rgba(255, 255, 255, 0.14);
+}
+building-block:nth-of-type(17) {
+  left: 74vw;
+  top: 42vh;
+  background-color: rgba(255, 255, 255, 0.16);
+}
+
+info-column {
+  display: block;
+  position: fixed;
+  width: 2vw;
+  height: 2vw;
+  border-radius: 100%;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.05);
+}
+info-column:nth-of-type(1) {
+  top: 12vh;
+  left: 24vw;
+  background-color: rgba(255, 255, 255, 0.12);
+}
+info-column:nth-of-type(2) {
+  top: 75vh;
+  left: 88vw;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+info-column:nth-of-type(3) {
+  top: 72vh;
+  left: 23vw;
+  background-color: rgba(255, 255, 255, 0.07);
+}
+info-column:nth-of-type(4) {
+  top: 19vh;
+  left: 56vw;
+  background-color: rgba(255, 255, 255, 0.07);
+}
+info-column:nth-of-type(5) {
+  top: 22vh;
+  left: 96vw;
+  background-color: rgba(255, 255, 255, 0.16);
+}
+info-column:nth-of-type(6) {
+  top: 64vh;
+  left: 44vw;
+  background-color: rgba(255, 255, 255, 0.19);
+}
+info-column:nth-of-type(7) {
+  top: 33vh;
+  left: 10vw;
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+@supports (animation-timeline: view()) {
   /* Block #1 */
+  /*
   @keyframes building-block-one {
     0% {
       top: 21vw;
@@ -310,8 +359,10 @@ main {
     animation: building-block-one ease-out;
     animation-timeline: scroll(root);
   }
+  */
 
   /* Block #2 */
+  /*
   @keyframes building-block-two {
     0%,
     20% {
@@ -336,8 +387,10 @@ main {
     animation: building-block-two ease-out;
     animation-timeline: scroll(root);
   }
+  */
 
   /* Block #3 */
+  /*
   @keyframes building-block-three {
     0%,
     25% {
@@ -362,52 +415,9 @@ main {
     animation: building-block-three ease-out;
     animation-timeline: scroll(root);
   }
+  */
 
-  info-column {
-    display: block;
-    position: fixed;
-    width: 2vw;
-    height: 2vw;
-    border-radius: 100%;
-    box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
-    background-color: rgba(255, 255, 255, 0.05);
-  }
-  info-column:nth-of-type(1) {
-    top: 12vh;
-    left: 24vw;
-    background-color: rgba(255, 255, 255, 0.12);
-  }
-  info-column:nth-of-type(2) {
-    top: 5vw;
-    left: 78vw;
-    background-color: rgba(255, 255, 255, 0.15);
-  }
-  info-column:nth-of-type(3) {
-    top: 18vw;
-    left: 22vw;
-    background-color: rgba(255, 255, 255, 0.07);
-  }
-  info-column:nth-of-type(4) {
-    top: 19vw;
-    left: 56vw;
-    background-color: rgba(255, 255, 255, 0.07);
-  }
-  info-column:nth-of-type(5) {
-    top: 22vw;
-    left: 96vw;
-    background-color: rgba(255, 255, 255, 0.16);
-  }
-  info-column:nth-of-type(6) {
-    top: 24vw;
-    left: 34vw;
-    background-color: rgba(255, 255, 255, 0.19);
-  }
-  info-column:nth-of-type(7) {
-    top: 13vw;
-    left: 10vw;
-    background-color: rgba(255, 255, 255, 0.12);
-  }
-
+  /*
   @keyframes info-spotlight-one {
     0%,
     10% {
@@ -437,6 +447,7 @@ main {
     animation: info-spotlight-one ease-out;
     animation-timeline: scroll(root);
   }
+  */
 
   @keyframes building-blocks {
     0% {
