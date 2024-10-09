@@ -9,13 +9,30 @@ body {
   /* Ref: Valhalla */
   /* https://colors.dopely.top/color-pedia/282c3c */
   --primary-text-color: #efefef;
-  --blocks-top: calc(100vh - 29vw);
-  --blocks-left: 4vw;
-  --blocks-offset-left: 2.78vw;
-  --blocks-offset-top: 4.4vh;
-  --block-width: 2.1vw;
-  --block-height: 2.11vw;
-  --color-valhalla-dark-transparent: rgba(26, 29, 39, 0.98);
+
+  --blocks-offset-left: 0px;
+  --blocks-offset-top: 0px;
+  --block-width: 25.5px;
+  --block-height: 25.5px;
+  @media (max-width: 992px) {
+    --block-width: 19.125px;
+    --block-height: 19.125px;
+  }
+  @media (max-width: 736px) {
+    --block-width: 12.75px;
+    --block-height: 12.75px;
+  }
+  @media (max-width: 500px) {
+    --block-width: 6.375px;
+    --block-height: 6.375px;
+  }
+
+  --blocks-top: calc(100vh - 9 * var(--block-height));
+  --blocks-left: calc(1 * var(--block-width));
+
+  @media (max-width: 500px) {
+    --blocks-left: 0px;
+  }
 
   /* System Font Stack */
   font-family:
@@ -196,9 +213,6 @@ main {
   }
 }
 
-/*
-*/
-
 building-block {
   display: block;
   position: fixed;
@@ -350,7 +364,6 @@ info-column:nth-of-type(7) {
     }
     25%,
     100% {
-      left: 16.7vw;
       /* (1, 1) */
       left: calc(
         var(--blocks-left) + var(--blocks-offset-left) + 1 * var(--block-width)
@@ -358,10 +371,12 @@ info-column:nth-of-type(7) {
       top: calc(
         var(--blocks-top) + var(--blocks-offset-top) + 1 * var(--block-height)
       );
-      width: 2.1vw;
-      height: 2.1vw;
+      width: var(--block-width);
+      height: var(--block-height);
       border-radius: 0;
       box-shadow: none;
+      margin-left: 1px;
+      margin-top: 1px;
       background-color: white;
     }
   }
@@ -389,8 +404,10 @@ info-column:nth-of-type(7) {
       top: calc(
         var(--blocks-top) + var(--blocks-offset-top) + 3 * var(--block-height)
       );
-      width: 2vw;
-      height: 2vw;
+      width: var(--block-width);
+      height: var(--block-height);
+      margin-left: 1px;
+      margin-top: 3px;
       border-radius: 0;
       box-shadow: none;
       background-color: white;
@@ -420,8 +437,10 @@ info-column:nth-of-type(7) {
       top: calc(
         var(--blocks-top) + var(--blocks-offset-top) + 4 * var(--block-height)
       );
-      width: 2vw;
-      height: 2vw;
+      width: var(--block-width);
+      height: var(--block-height);
+      margin-left: 1px;
+      margin-top: 4px;
       border-radius: 0;
       box-shadow: none;
       background-color: white;
@@ -451,8 +470,10 @@ info-column:nth-of-type(7) {
       top: calc(
         var(--blocks-top) + var(--blocks-offset-top) + 5 * var(--block-height)
       );
-      width: 2vw;
-      height: 2vw;
+      width: var(--block-width);
+      height: var(--block-height);
+      margin-left: 1px;
+      margin-top: 5px;
       border-radius: 0;
       box-shadow: none;
       background-color: white;
@@ -482,8 +503,10 @@ info-column:nth-of-type(7) {
       top: calc(
         var(--blocks-top) + var(--blocks-offset-top) + 6 * var(--block-height)
       );
-      width: 2vw;
-      height: 2vw;
+      width: var(--block-width);
+      height: var(--block-height);
+      margin-left: 1px;
+      margin-top: 6px;
       border-radius: 0;
       box-shadow: none;
       background-color: white;
@@ -513,8 +536,10 @@ info-column:nth-of-type(7) {
       top: calc(
         var(--blocks-top) + var(--blocks-offset-top) + 5 * var(--block-height)
       );
-      width: 2vw;
-      height: 2vw;
+      width: var(--block-width);
+      height: var(--block-height);
+      margin-left: 2px;
+      margin-top: 5px;
       border-radius: 0;
       box-shadow: none;
       background-color: white;
@@ -544,10 +569,12 @@ info-column:nth-of-type(7) {
       top: calc(
         var(--blocks-top) + var(--blocks-offset-top) + 6 * var(--block-height)
       );
-      width: 2vw;
-      height: 2vw;
+      width: var(--block-width);
+      height: var(--block-height);
       border-radius: 0;
       box-shadow: none;
+      margin-left: 2px;
+      margin-top: 6px;
       background-color: white;
     }
   }
@@ -575,8 +602,10 @@ info-column:nth-of-type(7) {
       top: calc(
         var(--blocks-top) + var(--blocks-offset-top) + 2 * var(--block-height)
       );
-      width: 2vw;
-      height: 2vw;
+      width: var(--block-width);
+      height: var(--block-height);
+      margin-left: 3px;
+      margin-top: 2px;
       border-radius: 0;
       box-shadow: none;
       background-color: white;
@@ -606,8 +635,10 @@ info-column:nth-of-type(7) {
       top: calc(
         var(--blocks-top) + var(--blocks-offset-top) + 4 * var(--block-height)
       );
-      width: 2vw;
-      height: 2vw;
+      width: var(--block-width);
+      height: var(--block-height);
+      margin-left: 3px;
+      margin-top: 4px;
       border-radius: 0;
       box-shadow: none;
       background-color: white;
@@ -637,8 +668,10 @@ info-column:nth-of-type(7) {
       top: calc(
         var(--blocks-top) + var(--blocks-offset-top) + 5 * var(--block-height)
       );
-      width: 2vw;
-      height: 2vw;
+      width: var(--block-width);
+      height: var(--block-height);
+      margin-left: 3px;
+      margin-top: 5px;
       border-radius: 0;
       box-shadow: none;
       background-color: white;
@@ -668,8 +701,10 @@ info-column:nth-of-type(7) {
       top: calc(
         var(--blocks-top) + var(--blocks-offset-top) + 6 * var(--block-height)
       );
-      width: 2vw;
-      height: 2vw;
+      width: var(--block-width);
+      height: var(--block-height);
+      margin-left: 3px;
+      margin-top: 6px;
       border-radius: 0;
       box-shadow: none;
       background-color: white;
@@ -692,15 +727,17 @@ info-column:nth-of-type(7) {
     }
     25%,
     100% {
-      /* (4, 6) */
+      /* (4, 5) */
       left: calc(
         var(--blocks-left) + var(--blocks-offset-left) + 4 * var(--block-width)
       );
       top: calc(
-        var(--blocks-top) + var(--blocks-offset-top) + 6 * var(--block-height)
+        var(--blocks-top) + var(--blocks-offset-top) + 5 * var(--block-height)
       );
-      width: 2vw;
-      height: 2vw;
+      width: var(--block-width);
+      height: var(--block-height);
+      margin-left: 4px;
+      margin-top: 5px;
       border-radius: 0;
       box-shadow: none;
       background-color: white;
@@ -723,15 +760,17 @@ info-column:nth-of-type(7) {
     }
     25%,
     100% {
-      /* (4, 5) */
+      /* (4, 6) */
       left: calc(
         var(--blocks-left) + var(--blocks-offset-left) + 4 * var(--block-width)
       );
       top: calc(
-        var(--blocks-top) + var(--blocks-offset-top) + 5 * var(--block-height)
+        var(--blocks-top) + var(--blocks-offset-top) + 6 * var(--block-height)
       );
-      width: 2vw;
-      height: 2vw;
+      width: var(--block-width);
+      height: var(--block-height);
+      margin-left: 4px;
+      margin-top: 6px;
       border-radius: 0;
       box-shadow: none;
       background-color: white;
@@ -754,15 +793,17 @@ info-column:nth-of-type(7) {
     }
     25%,
     100% {
-      /* (4, 5) */
+      /* (5, 3) */
       left: calc(
         var(--blocks-left) + var(--blocks-offset-left) + 5 * var(--block-width)
       );
       top: calc(
         var(--blocks-top) + var(--blocks-offset-top) + 3 * var(--block-height)
       );
-      width: 2vw;
-      height: 2vw;
+      width: var(--block-width);
+      height: var(--block-height);
+      margin-left: 5px;
+      margin-top: 3px;
       border-radius: 0;
       box-shadow: none;
       background-color: white;
@@ -792,8 +833,10 @@ info-column:nth-of-type(7) {
       top: calc(
         var(--blocks-top) + var(--blocks-offset-top) + 6 * var(--block-height)
       );
-      width: 2vw;
-      height: 2vw;
+      width: var(--block-width);
+      height: var(--block-height);
+      margin-left: 5px;
+      margin-top: 6px;
       border-radius: 0;
       box-shadow: none;
       background-color: white;
@@ -823,8 +866,10 @@ info-column:nth-of-type(7) {
       top: calc(
         var(--blocks-top) + var(--blocks-offset-top) + 5 * var(--block-height)
       );
-      width: 2vw;
-      height: 2vw;
+      width: var(--block-width);
+      height: var(--block-height);
+      margin-left: 6px;
+      margin-top: 5px;
       border-radius: 0;
       box-shadow: none;
       background-color: white;
@@ -854,8 +899,10 @@ info-column:nth-of-type(7) {
       top: calc(
         var(--blocks-top) + var(--blocks-offset-top) + 6 * var(--block-height)
       );
-      width: 2vw;
-      height: 2vw;
+      width: var(--block-width);
+      height: var(--block-height);
+      margin-left: 6px;
+      margin-top: 6px;
       border-radius: 0;
       box-shadow: none;
       background-color: white;
@@ -866,119 +913,83 @@ info-column:nth-of-type(7) {
     animation-timeline: scroll(root);
   }
 
-  /*
-  @keyframes info-spotlight-one {
-    0%,
-    10% {
-      top: 12vh;
-      left: 24vw;
-      width: 2vw;
-      height: 2vw;
-      background-color: rgba(255, 255, 255, 0.12);
-    }
-    15% {
-      top: calc(50% - 15vh);
-      left: calc(50% - 15vh);
-      width: 30vh;
-      height: 30vh;
-      background-color: rgba(255, 255, 255, 0.01);
-      box-shadow: 0 0 24px rgba(255, 255, 255, 0.04);
-    }
-    20%,
-    100% {
-      top: calc(50% - 15vh);
-      left: calc(50% - 15vh);
-      background-color: rgba(255, 255, 255, 0);
-      box-shadow: 0 0 24px rgba(255, 255, 255, 0);
-    }
-  }
-  info-column:nth-of-type(1) {
-    animation: info-spotlight-one ease-out;
-    animation-timeline: scroll(root);
-  }
-  */
-
-  @keyframes building-blocks {
-    0% {
-      top: 90vh;
-      left: -32vw;
-      width: 22vw;
-      height: 22vw;
-    }
-    20% {
-      top: var(--blocks-top);
-      left: var(--blocks-left);
-      width: 22vw;
-      height: 22vw;
-    }
-    80% {
-      top: var(--blocks-top);
-      left: var(--blocks-left);
-      width: 22vw;
-      height: 22vw;
-      border-radius: 50%;
-    }
-    100% {
-      bottom: 0;
-      left: -1vw;
-      width: 104vw;
-      height: 14.8vw;
-      border-radius: 0;
-    }
-  }
-  building-blocks {
-    animation: building-blocks ease-out;
-    animation-timeline: scroll(root);
-  }
-
-  building-blocks {
-    display: block;
-    position: fixed;
-    bottom: 7vw;
-    left: 9vw;
-    border-radius: 50%;
-    width: 17vw;
-    height: 17vw;
-    background-image: repeating-linear-gradient(
-        0deg,
-        rgba(255, 255, 255, 0.5) 0px,
-        rgba(255, 255, 255, 0.5) 1px,
-        transparent 0.068vw,
-        transparent 2.11vw
-      ),
-      repeating-linear-gradient(
-        90deg,
-        rgba(255, 255, 255, 0.5) 0px,
-        rgba(255, 255, 255, 0.5) 1px,
-        transparent 0.068vw,
-        transparent 2.11vw
-      );
-    background-position: top left 0.525vw;
-  }
-
   /* Tried to come up with a predictable formula based on each
    * "page" being 1/8 (12.5%) of the total height but ended up
    * doing it by feel.
+   *
+   * Find the % of the page where the text should disappear and
+   * start the fade 2% before that.
    *
    * Will have to manually refactor if pages are deleted/added.
    *
    * ¯\_(ツ)_/¯
    */
   @keyframes page-one-fade {
-    0% {
+    0%,
+    4% {
       opacity: 1;
     }
-    6.25%,
+    6%,
     100% {
       opacity: 0;
     }
   }
   @keyframes my-location-fade {
     0%,
-    15.625% {
+    21% {
       opacity: 1;
     }
-    21%,
+    23%,
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes my-experience-fade {
+    0%,
+    37% {
+      opacity: 1;
+    }
+    39%,
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes page-four-fade {
+    0%,
+    53.5% {
+      opacity: 1;
+    }
+    55.5%,
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes page-five-fade {
+    0%,
+    69.5% {
+      opacity: 1;
+    }
+    71.5%,
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes page-five-fade {
+    0%,
+    69.5% {
+      opacity: 1;
+    }
+    71.5%,
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes skills-cloud-fade {
+    0%,
+    87% {
+      opacity: 1;
+    }
+    89%,
     100% {
       opacity: 0;
     }
@@ -989,6 +1000,22 @@ info-column:nth-of-type(7) {
   }
   my-location {
     animation: my-location-fade ease-out;
+    animation-timeline: scroll(root);
+  }
+  my-experience {
+    animation: my-experience-fade ease-out;
+    animation-timeline: scroll(root);
+  }
+  page-four {
+    animation: page-four-fade ease-out;
+    animation-timeline: scroll(root);
+  }
+  page-five {
+    animation: page-five-fade ease-out;
+    animation-timeline: scroll(root);
+  }
+  skills-cloud {
+    animation: skills-cloud-fade ease-out;
     animation-timeline: scroll(root);
   }
 }
