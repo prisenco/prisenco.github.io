@@ -10,7 +10,11 @@ body {
   /* https://colors.dopely.top/color-pedia/282c3c */
   --primary-text-color: #efefef;
   --blocks-top: calc(100vh - 29vw);
-  --block-height: 2vw;
+  --blocks-left: 4vw;
+  --blocks-offset-left: 2.78vw;
+  --blocks-offset-top: 4.4vh;
+  --block-width: 2.1vw;
+  --block-height: 2.11vw;
   --color-valhalla-dark-transparent: rgba(26, 29, 39, 0.98);
 
   /* System Font Stack */
@@ -337,19 +341,25 @@ info-column:nth-of-type(7) {
 
 @supports (animation-timeline: view()) {
   /* Block #1 */
-  /*
   @keyframes building-block-one {
-    0% {
-      top: 21vw;
+    0%,
+    8% {
       left: 88vw;
+      top: 63vh;
       border-radius: 100%;
     }
-    20%,
+    25%,
     100% {
       left: 16.7vw;
-      top: calc(var(--blocks-top) + 4 * var(--block-height));
-      width: 2vw;
-      height: 2vw;
+      /* (1, 1) */
+      left: calc(
+        var(--blocks-left) + var(--blocks-offset-left) + 1 * var(--block-width)
+      );
+      top: calc(
+        var(--blocks-top) + var(--blocks-offset-top) + 1 * var(--block-height)
+      );
+      width: 2.1vw;
+      height: 2.1vw;
       border-radius: 0;
       box-shadow: none;
       background-color: white;
@@ -359,23 +369,26 @@ info-column:nth-of-type(7) {
     animation: building-block-one ease-out;
     animation-timeline: scroll(root);
   }
-  */
 
   /* Block #2 */
-  /*
   @keyframes building-block-two {
     0%,
-    20% {
-      top: 18vw;
-      left: 80vw;
+    8.5% {
+      left: 51vw;
+      top: 36vh;
       width: 1vw;
       height: 1vw;
       border-radius: 100%;
     }
     25%,
     100% {
-      left: 8.25vw;
-      top: calc(100% - 23.1vw);
+      /* (1, 3) */
+      left: calc(
+        var(--blocks-left) + var(--blocks-offset-left) + 1 * var(--block-width)
+      );
+      top: calc(
+        var(--blocks-top) + var(--blocks-offset-top) + 3 * var(--block-height)
+      );
       width: 2vw;
       height: 2vw;
       border-radius: 0;
@@ -387,23 +400,26 @@ info-column:nth-of-type(7) {
     animation: building-block-two ease-out;
     animation-timeline: scroll(root);
   }
-  */
 
   /* Block #3 */
-  /*
   @keyframes building-block-three {
     0%,
-    25% {
-      top: 6vw;
-      left: 53vw;
+    9% {
+      left: 63vw;
+      top: 72vh;
       width: 1vw;
       height: 1vw;
       border-radius: 100%;
     }
-    30%,
+    25%,
     100% {
-      left: 18.77vw;
-      top: calc(100% - 16.76vw);
+      /* (1, 4) */
+      left: calc(
+        var(--blocks-left) + var(--blocks-offset-left) + 1 * var(--block-width)
+      );
+      top: calc(
+        var(--blocks-top) + var(--blocks-offset-top) + 4 * var(--block-height)
+      );
       width: 2vw;
       height: 2vw;
       border-radius: 0;
@@ -415,7 +431,440 @@ info-column:nth-of-type(7) {
     animation: building-block-three ease-out;
     animation-timeline: scroll(root);
   }
-  */
+
+  /* Block #4 */
+  @keyframes building-block-four {
+    0%,
+    9.5% {
+      left: 7vw;
+      top: 64vh;
+      width: 1vw;
+      height: 1vw;
+      border-radius: 100%;
+    }
+    25%,
+    100% {
+      /* (1, 5) */
+      left: calc(
+        var(--blocks-left) + var(--blocks-offset-left) + 1 * var(--block-width)
+      );
+      top: calc(
+        var(--blocks-top) + var(--blocks-offset-top) + 5 * var(--block-height)
+      );
+      width: 2vw;
+      height: 2vw;
+      border-radius: 0;
+      box-shadow: none;
+      background-color: white;
+    }
+  }
+  building-block:nth-of-type(4) {
+    animation: building-block-four ease-out;
+    animation-timeline: scroll(root);
+  }
+
+  /* Block #5 */
+  @keyframes building-block-five {
+    0%,
+    10% {
+      left: 52vw;
+      top: 82vh;
+      width: 1vw;
+      height: 1vw;
+      border-radius: 100%;
+    }
+    25%,
+    100% {
+      /* (1, 6) */
+      left: calc(
+        var(--blocks-left) + var(--blocks-offset-left) + 1 * var(--block-width)
+      );
+      top: calc(
+        var(--blocks-top) + var(--blocks-offset-top) + 6 * var(--block-height)
+      );
+      width: 2vw;
+      height: 2vw;
+      border-radius: 0;
+      box-shadow: none;
+      background-color: white;
+    }
+  }
+  building-block:nth-of-type(5) {
+    animation: building-block-five ease-out;
+    animation-timeline: scroll(root);
+  }
+
+  /* Block #6 */
+  @keyframes building-block-six {
+    0%,
+    10.5% {
+      left: 21vw;
+      top: 45vh;
+      width: 1vw;
+      height: 1vw;
+      border-radius: 100%;
+    }
+    25%,
+    100% {
+      /* (2, 5) */
+      left: calc(
+        var(--blocks-left) + var(--blocks-offset-left) + 2 * var(--block-width)
+      );
+      top: calc(
+        var(--blocks-top) + var(--blocks-offset-top) + 5 * var(--block-height)
+      );
+      width: 2vw;
+      height: 2vw;
+      border-radius: 0;
+      box-shadow: none;
+      background-color: white;
+    }
+  }
+  building-block:nth-of-type(6) {
+    animation: building-block-six ease-out;
+    animation-timeline: scroll(root);
+  }
+
+  /* Block #7 */
+  @keyframes building-block-seven {
+    0%,
+    11% {
+      left: 35vw;
+      top: 79vh;
+      width: 1vw;
+      height: 1vw;
+      border-radius: 100%;
+    }
+    25%,
+    100% {
+      /* (2, 6) */
+      left: calc(
+        var(--blocks-left) + var(--blocks-offset-left) + 2 * var(--block-width)
+      );
+      top: calc(
+        var(--blocks-top) + var(--blocks-offset-top) + 6 * var(--block-height)
+      );
+      width: 2vw;
+      height: 2vw;
+      border-radius: 0;
+      box-shadow: none;
+      background-color: white;
+    }
+  }
+  building-block:nth-of-type(7) {
+    animation: building-block-seven ease-out;
+    animation-timeline: scroll(root);
+  }
+
+  /* Block #8 */
+  @keyframes building-block-eight {
+    0%,
+    11.5% {
+      left: 26vw;
+      top: 22vh;
+      width: 1vw;
+      height: 1vw;
+      border-radius: 100%;
+    }
+    25%,
+    100% {
+      /* (3, 3) */
+      left: calc(
+        var(--blocks-left) + var(--blocks-offset-left) + 3 * var(--block-width)
+      );
+      top: calc(
+        var(--blocks-top) + var(--blocks-offset-top) + 2 * var(--block-height)
+      );
+      width: 2vw;
+      height: 2vw;
+      border-radius: 0;
+      box-shadow: none;
+      background-color: white;
+    }
+  }
+  building-block:nth-of-type(8) {
+    animation: building-block-eight ease-out;
+    animation-timeline: scroll(root);
+  }
+
+  /* Block #9 */
+  @keyframes building-block-nine {
+    0%,
+    12% {
+      left: 71vw;
+      top: 17vh;
+      width: 1vw;
+      height: 1vw;
+      border-radius: 100%;
+    }
+    25%,
+    100% {
+      /* (3, 4) */
+      left: calc(
+        var(--blocks-left) + var(--blocks-offset-left) + 3 * var(--block-width)
+      );
+      top: calc(
+        var(--blocks-top) + var(--blocks-offset-top) + 4 * var(--block-height)
+      );
+      width: 2vw;
+      height: 2vw;
+      border-radius: 0;
+      box-shadow: none;
+      background-color: white;
+    }
+  }
+  building-block:nth-of-type(9) {
+    animation: building-block-nine ease-out;
+    animation-timeline: scroll(root);
+  }
+
+  /* Block #10 */
+  @keyframes building-block-ten {
+    0%,
+    12.5% {
+      left: 74vw;
+      top: 91vh;
+      width: 1vw;
+      height: 1vw;
+      border-radius: 100%;
+    }
+    25%,
+    100% {
+      /* (3, 5) */
+      left: calc(
+        var(--blocks-left) + var(--blocks-offset-left) + 3 * var(--block-width)
+      );
+      top: calc(
+        var(--blocks-top) + var(--blocks-offset-top) + 5 * var(--block-height)
+      );
+      width: 2vw;
+      height: 2vw;
+      border-radius: 0;
+      box-shadow: none;
+      background-color: white;
+    }
+  }
+  building-block:nth-of-type(10) {
+    animation: building-block-ten ease-out;
+    animation-timeline: scroll(root);
+  }
+
+  /* Block #11 */
+  @keyframes building-block-eleven {
+    0%,
+    13% {
+      left: 66vw;
+      top: 59vh;
+      width: 1vw;
+      height: 1vw;
+      border-radius: 100%;
+    }
+    25%,
+    100% {
+      /* (3, 6) */
+      left: calc(
+        var(--blocks-left) + var(--blocks-offset-left) + 3 * var(--block-width)
+      );
+      top: calc(
+        var(--blocks-top) + var(--blocks-offset-top) + 6 * var(--block-height)
+      );
+      width: 2vw;
+      height: 2vw;
+      border-radius: 0;
+      box-shadow: none;
+      background-color: white;
+    }
+  }
+  building-block:nth-of-type(11) {
+    animation: building-block-eleven ease-out;
+    animation-timeline: scroll(root);
+  }
+
+  /* Block #12 */
+  @keyframes building-block-twelve {
+    0%,
+    13.5% {
+      left: 90vw;
+      top: 35vh;
+      width: 1vw;
+      height: 1vw;
+      border-radius: 100%;
+    }
+    25%,
+    100% {
+      /* (4, 6) */
+      left: calc(
+        var(--blocks-left) + var(--blocks-offset-left) + 4 * var(--block-width)
+      );
+      top: calc(
+        var(--blocks-top) + var(--blocks-offset-top) + 6 * var(--block-height)
+      );
+      width: 2vw;
+      height: 2vw;
+      border-radius: 0;
+      box-shadow: none;
+      background-color: white;
+    }
+  }
+  building-block:nth-of-type(12) {
+    animation: building-block-twelve ease-out;
+    animation-timeline: scroll(root);
+  }
+
+  /* Block #13 */
+  @keyframes building-block-thirteen {
+    0%,
+    14% {
+      left: 90vw;
+      top: 35vh;
+      width: 1vw;
+      height: 1vw;
+      border-radius: 100%;
+    }
+    25%,
+    100% {
+      /* (4, 5) */
+      left: calc(
+        var(--blocks-left) + var(--blocks-offset-left) + 4 * var(--block-width)
+      );
+      top: calc(
+        var(--blocks-top) + var(--blocks-offset-top) + 5 * var(--block-height)
+      );
+      width: 2vw;
+      height: 2vw;
+      border-radius: 0;
+      box-shadow: none;
+      background-color: white;
+    }
+  }
+  building-block:nth-of-type(13) {
+    animation: building-block-thirteen ease-out;
+    animation-timeline: scroll(root);
+  }
+
+  /* Block #14 */
+  @keyframes building-block-fourteen {
+    0%,
+    14.5% {
+      left: 90vw;
+      top: 35vh;
+      width: 1vw;
+      height: 1vw;
+      border-radius: 100%;
+    }
+    25%,
+    100% {
+      /* (4, 5) */
+      left: calc(
+        var(--blocks-left) + var(--blocks-offset-left) + 5 * var(--block-width)
+      );
+      top: calc(
+        var(--blocks-top) + var(--blocks-offset-top) + 3 * var(--block-height)
+      );
+      width: 2vw;
+      height: 2vw;
+      border-radius: 0;
+      box-shadow: none;
+      background-color: white;
+    }
+  }
+  building-block:nth-of-type(14) {
+    animation: building-block-fourteen ease-out;
+    animation-timeline: scroll(root);
+  }
+
+  /* Block #15 */
+  @keyframes building-block-fifteen {
+    0%,
+    15% {
+      left: 90vw;
+      top: 35vh;
+      width: 1vw;
+      height: 1vw;
+      border-radius: 100%;
+    }
+    25%,
+    100% {
+      /* (5, 6) */
+      left: calc(
+        var(--blocks-left) + var(--blocks-offset-left) + 5 * var(--block-width)
+      );
+      top: calc(
+        var(--blocks-top) + var(--blocks-offset-top) + 6 * var(--block-height)
+      );
+      width: 2vw;
+      height: 2vw;
+      border-radius: 0;
+      box-shadow: none;
+      background-color: white;
+    }
+  }
+  building-block:nth-of-type(15) {
+    animation: building-block-fifteen ease-out;
+    animation-timeline: scroll(root);
+  }
+
+  /* Block #16 */
+  @keyframes building-block-sixteen {
+    0%,
+    15.5% {
+      left: 90vw;
+      top: 35vh;
+      width: 1vw;
+      height: 1vw;
+      border-radius: 100%;
+    }
+    25%,
+    100% {
+      /* (4, 5) */
+      left: calc(
+        var(--blocks-left) + var(--blocks-offset-left) + 6 * var(--block-width)
+      );
+      top: calc(
+        var(--blocks-top) + var(--blocks-offset-top) + 5 * var(--block-height)
+      );
+      width: 2vw;
+      height: 2vw;
+      border-radius: 0;
+      box-shadow: none;
+      background-color: white;
+    }
+  }
+  building-block:nth-of-type(16) {
+    animation: building-block-sixteen ease-out;
+    animation-timeline: scroll(root);
+  }
+
+  /* Block #17 */
+  @keyframes building-block-seventeen {
+    0%,
+    16% {
+      left: 90vw;
+      top: 35vh;
+      width: 1vw;
+      height: 1vw;
+      border-radius: 100%;
+    }
+    25%,
+    100% {
+      /* (6, 6) */
+      left: calc(
+        var(--blocks-left) + var(--blocks-offset-left) + 6 * var(--block-width)
+      );
+      top: calc(
+        var(--blocks-top) + var(--blocks-offset-top) + 6 * var(--block-height)
+      );
+      width: 2vw;
+      height: 2vw;
+      border-radius: 0;
+      box-shadow: none;
+      background-color: white;
+    }
+  }
+  building-block:nth-of-type(17) {
+    animation: building-block-seventeen ease-out;
+    animation-timeline: scroll(root);
+  }
 
   /*
   @keyframes info-spotlight-one {
@@ -453,20 +902,20 @@ info-column:nth-of-type(7) {
     0% {
       top: 90vh;
       left: -32vw;
-      width: 27vw;
-      height: 27vw;
+      width: 22vw;
+      height: 22vw;
     }
     20% {
       top: var(--blocks-top);
-      left: 4vw;
-      width: 27vw;
-      height: 27vw;
+      left: var(--blocks-left);
+      width: 22vw;
+      height: 22vw;
     }
     80% {
       top: var(--blocks-top);
-      left: 4vw;
-      width: 27vw;
-      height: 27vw;
+      left: var(--blocks-left);
+      width: 22vw;
+      height: 22vw;
       border-radius: 50%;
     }
     100% {
@@ -504,7 +953,7 @@ info-column:nth-of-type(7) {
         transparent 0.068vw,
         transparent 2.11vw
       );
-    background-position: top left -1px;
+    background-position: top left 0.525vw;
   }
 
   /* Tried to come up with a predictable formula based on each
