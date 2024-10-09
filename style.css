@@ -11,6 +11,7 @@ body {
   --primary-text-color: #efefef;
   --blocks-top: calc(100vh - 29vw);
   --block-height: 2vw;
+  --color-valhalla-dark-transparent: rgba(26, 29, 39, 0.98);
 
   /* System Font Stack */
   font-family:
@@ -559,7 +560,7 @@ nav {
     font-size: min(2.4vw, 1rem);
     padding: 0.5vw 0;
   }
-  a[href="#"] {
+  a[href="#prisenco"] {
     background-color: rgba(56, 61, 82, 1);
     border: 1px solid white;
     padding: 0.5vw 1vw 0 1vw;
@@ -617,11 +618,11 @@ nav {
   }
 
   @media (max-width: 500px) {
-    a[href="#"],
+    a[href="#prisenco"],
     a[href="#lets-build"].mobile {
       font-size: 1.2rem;
     }
-    a[href="#"] {
+    a[href="#prisenco"] {
       padding: 0.5vw 4vw;
       img {
         width: 16px;
