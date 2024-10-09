@@ -27,7 +27,7 @@ body {
     --block-height: 6.375px;
   }
 
-  --blocks-top: calc(100vh - 9 * var(--block-height));
+  --blocks-top: calc(80vh - 9 * var(--block-height));
   --blocks-left: calc(1 * var(--block-width));
 
   @media (max-width: 500px) {
