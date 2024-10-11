@@ -44,7 +44,7 @@ body {
     --blocks-phase-one-left: calc(95vw - 9 * var(--block-width));
     --blocks-phase-two-left: 0px;
     --blocks-phase-three-left: calc(97vw - 9 * var(--block-width));
-    --blocks-phase-four-left: 0px;
+    --blocks-phase-four-left: calc(1 * var(--block-width));
   }
 
   /* System Font Stack */
