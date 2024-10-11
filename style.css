@@ -11,7 +11,7 @@
   height: 100dvh;
   background-color: rgba(128, 0, 128, 0.5);
   padding: 1vw;
-  border: 1px solid blue;
+  border: 5px solid blue;
   z-index: 100;
 }
 
