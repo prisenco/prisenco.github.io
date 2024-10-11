@@ -135,9 +135,10 @@ main {
   h1 {
     width: 80%;
     text-align: center;
-    letter-spacing: 0.16vw;
     font-weight: 800;
-    font-size: clamp(2rem, 4vw, 5rem);
+    font-size: 8vw;
+    font-size: clamp(1.8144rem, 0.7317rem + 5.4135vw, 5.0625rem);
+    letter-spacing: 0.16vw;
     text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
     margin: 0;
     width: fit-content;
@@ -148,7 +149,7 @@ main {
     text-align: center;
     letter-spacing: clamp(0.16rem, 0.32vw, 0.3rem);
     font-weight: 500;
-    font-size: clamp(0.9rem, 1.6vw, 1.2rem);
+    font-size: clamp(1.05rem, 0.9rem + 0.75vw, 1.5rem);
     text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
     margin: 0 0 1vw 0;
     width: fit-content;
@@ -158,31 +159,58 @@ main {
     width: 60%;
     text-align: center;
     letter-spacing: clamp(0.04rem, 0.08vw, 0.075rem);
-    line-height: 1.4vw;
     font-weight: 200;
-    font-size: clamp(0.9rem, 1.2vw, 1.2rem);
+    font-size: clamp(0.875rem, 0.8333rem + 0.2083vw, 1rem);
     text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
     margin: 0;
     width: fit-content;
   }
 
-  page-one {
+  /* Slightly larger for first and last pages */
+  lets-build,
+  prisenco-tech {
     h1 {
-      font-size: clamp(4rem, 6vw, 8rem);
+      font-size: clamp(2.1773rem, 0.3718rem + 9.0275vw, 7.5938rem);
     }
     h2 {
-      font-size: clamp(1.6rem, 2vw, 2.2rem);
-      letter-spacing: clamp(0.16rem, 0.32vw, 0.3rem);
+      font-size: clamp(1.26rem, 0.93rem + 1.65vw, 2.25rem);
     }
   }
 
-  page-one,
+  @media (max-width: 992px) {
+    h1 {
+    }
+    h2 {
+    }
+    h3 {
+    }
+  }
+
+  @media (max-width: 736px) {
+    h1 {
+    }
+    h2 {
+    }
+    h3 {
+    }
+  }
+
+  @media (max-width: 500px) {
+    h1 {
+    }
+    h2 {
+    }
+    h3 {
+    }
+  }
+
+  prisenco-tech,
   my-location,
   my-experience,
-  page-four,
-  page-five,
+  full-stack,
+  creative-collab,
   skills-cloud,
-  page-six {
+  lets-build {
     display: flex;
     height: 100vh;
     align-items: center;
@@ -190,7 +218,7 @@ main {
     flex-direction: column;
   }
 
-  page-six {
+  lets-build {
     h2 {
       display: flex;
       justify-content: space-between;
@@ -210,6 +238,20 @@ main {
         position: relative;
         top: 6px;
         margin-right: 8px;
+      }
+    }
+  }
+
+  my-location {
+    h2 {
+      display: flex;
+      gap: 32px;
+      @media (max-width: 500px) {
+        gap: 8px;
+        margin-top: 8px;
+        display: flex;
+        width: fit-content;
+        flex-direction: column;
       }
     }
   }
@@ -1485,7 +1527,7 @@ building-block:nth-of-type(17) {
    *
    * ¯\_(ツ)_/¯
    */
-@keyframes page-one-fade {
+@keyframes prisenco-tech-fade {
   0%,
   4% {
     opacity: 1;
@@ -1507,15 +1549,15 @@ building-block:nth-of-type(17) {
 }
 @keyframes my-experience-fade {
   0%,
-  37% {
+  36% {
     opacity: 1;
   }
-  39%,
+  38%,
   100% {
     opacity: 0;
   }
 }
-@keyframes page-four-fade {
+@keyframes full-stack-fade {
   0%,
   53.5% {
     opacity: 1;
@@ -1525,17 +1567,7 @@ building-block:nth-of-type(17) {
     opacity: 0;
   }
 }
-@keyframes page-five-fade {
-  0%,
-  69.5% {
-    opacity: 1;
-  }
-  71.5%,
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes page-five-fade {
+@keyframes creative-collab-fade {
   0%,
   69.5% {
     opacity: 1;
@@ -1555,8 +1587,8 @@ building-block:nth-of-type(17) {
     opacity: 0;
   }
 }
-page-one {
-  animation: page-one-fade ease-out;
+prisenco-tech {
+  animation: prisenco-tech-fade ease-out;
   animation-timeline: scroll(root);
 }
 my-location {
@@ -1567,12 +1599,12 @@ my-experience {
   animation: my-experience-fade ease-out;
   animation-timeline: scroll(root);
 }
-page-four {
-  animation: page-four-fade ease-out;
+full-stack {
+  animation: full-stack-fade ease-out;
   animation-timeline: scroll(root);
 }
-page-five {
-  animation: page-five-fade ease-out;
+creative-collab {
+  animation: creative-collab-fade ease-out;
   animation-timeline: scroll(root);
 }
 skills-cloud {
