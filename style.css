@@ -137,7 +137,8 @@ html {
 
 main {
   display: block;
-  width: min(80vw, 880px);
+  /* Leave space for the block formations on smaller screens */
+  width: min(calc(80vw - 2 * 5 * var(--block-width)), 880px);
   height: fit-content;
   margin: 0 auto;
 
