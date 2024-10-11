@@ -5,16 +5,6 @@
   box-sizing: border-box;
 }
 
-#dvh-test {
-  position: fixed;
-  width: 20vw;
-  height: 100dvh;
-  background-color: rgba(128, 0, 128, 0.5);
-  padding: 1vw;
-  border: 5px solid blue;
-  z-index: 100;
-}
-
 body {
   /* Ref: Valhalla */
   /* https://colors.dopely.top/color-pedia/282c3c */
