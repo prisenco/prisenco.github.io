@@ -177,7 +177,6 @@ main {
   page-six {
     display: flex;
     height: 100vh;
-    display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -185,7 +184,16 @@ main {
 
   page-six {
     h2 {
+      display: flex;
+      justify-content: space-between;
+      @media (max-width: 500px) {
+        width: fit-content;
+        flex-direction: column;
+        text-align: left;
+        margin-top: 12px;
+      }
       a {
+        margin-bottom: 12px;
         text-decoration: none;
         color: white;
         margin-right: 16px;
