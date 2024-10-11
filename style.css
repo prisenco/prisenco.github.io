@@ -28,7 +28,7 @@ body {
     --block-height: 6.375px;
   }
 
-  --blocks-phase-one-top: calc(100dh - 8 * var(--block-height));
+  --blocks-phase-one-top: calc(100dvh - 8 * var(--block-height));
   --blocks-phase-one-left: calc(98vw - 9 * var(--block-width));
 
   --blocks-phase-two-top: 10vh;
