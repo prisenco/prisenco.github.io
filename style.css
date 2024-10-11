@@ -47,8 +47,8 @@ body {
     --blocks-phase-four-left: calc(1 * var(--block-width));
 
     --blocks-phase-one-top: calc(100svh - 10 * var(--block-height));
-    --blocks-phase-two-top: 8dvh;
-    --blocks-phase-three-top: 8dvh;
+    --blocks-phase-two-top: 12dvh;
+    --blocks-phase-three-top: 12dvh;
     --blocks-phase-four-top: calc(100svh - 11 * var(--block-height));
   }
 
