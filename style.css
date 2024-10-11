@@ -166,12 +166,16 @@ main {
     width: fit-content;
   }
 
-  /* Slightly larger for first and last pages */
+  /* Slightly larger first line for first and last pages */
   lets-build,
   prisenco-tech {
     h1 {
       font-size: clamp(2.1773rem, 0.3718rem + 9.0275vw, 7.5938rem);
     }
+  }
+
+  /* Slightly larger second line for first page */
+  prisenco-tech {
     h2 {
       font-size: clamp(1.26rem, 0.93rem + 1.65vw, 2.25rem);
     }
