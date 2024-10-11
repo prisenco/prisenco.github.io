@@ -46,10 +46,10 @@ body {
     --blocks-phase-three-left: calc(97vw - 9 * var(--block-width));
     --blocks-phase-four-left: calc(1 * var(--block-width));
 
-    --blocks-phase-one-top: calc(100lvh - 10 * var(--block-height));
+    --blocks-phase-one-top: calc(100svh - 10 * var(--block-height));
     --blocks-phase-two-top: 8dvh;
     --blocks-phase-three-top: 8dvh;
-    --blocks-phase-four-top: calc(100lvh - 11 * var(--block-height));
+    --blocks-phase-four-top: calc(100svh - 11 * var(--block-height));
   }
 
   /* System Font Stack */
