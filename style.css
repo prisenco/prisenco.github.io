@@ -28,7 +28,7 @@ body {
     --block-height: 6.375px;
   }
 
-  --blocks-phase-one-top: calc(90vh - 9 * var(--block-height));
+  --blocks-phase-one-top: calc(90dvh - 9 * var(--block-height));
   --blocks-phase-one-left: calc(98vw - 9 * var(--block-width));
 
   --blocks-phase-two-top: 20vh;
@@ -37,7 +37,7 @@ body {
   --blocks-phase-three-top: 20vh;
   --blocks-phase-three-left: calc(98vw - 9 * var(--block-width));
 
-  --blocks-phase-four-top: calc(90vh - 9 * var(--block-height));
+  --blocks-phase-four-top: calc(90dvh - 9 * var(--block-height));
   --blocks-phase-four-left: calc(1 * var(--block-width));
 
   @media (max-width: 500px) {
