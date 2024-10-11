@@ -37,7 +37,7 @@ body {
     --block-height: 6.375px;
   }
 
-  --blocks-phase-one-top: calc(100svh - 8 * var(--block-height));
+  --blocks-phase-one-top: calc(100dvh - 8 * var(--block-height));
   --blocks-phase-one-left: calc(98vw - 9 * var(--block-width));
 
   --blocks-phase-two-top: 10vh;
@@ -46,7 +46,7 @@ body {
   --blocks-phase-three-top: 10vh;
   --blocks-phase-three-left: calc(98vw - 9 * var(--block-width));
 
-  --blocks-phase-four-top: calc(100svh - 9 * var(--block-height));
+  --blocks-phase-four-top: calc(100dvh - 9 * var(--block-height));
   --blocks-phase-four-left: calc(1 * var(--block-width));
 
   @media (max-width: 500px) {
@@ -55,10 +55,10 @@ body {
     --blocks-phase-three-left: calc(97vw - 9 * var(--block-width));
     --blocks-phase-four-left: calc(1 * var(--block-width));
 
-    --blocks-phase-one-top: calc(100svh - 10 * var(--block-height));
-    --blocks-phase-two-top: 12svh;
-    --blocks-phase-three-top: 12svh;
-    --blocks-phase-four-top: calc(100svh - 11 * var(--block-height));
+    --blocks-phase-one-top: calc(100dvh - 10 * var(--block-height));
+    --blocks-phase-two-top: 12dvh;
+    --blocks-phase-three-top: 12dvh;
+    --blocks-phase-four-top: calc(100dvh - 11 * var(--block-height));
   }
 
   /* System Font Stack */
