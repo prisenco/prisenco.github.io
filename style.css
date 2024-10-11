@@ -52,31 +52,6 @@ body {
     --blocks-phase-four-top: calc(100dvh - 11 * var(--block-height));
   }
 
-  dvh-test-one {
-    display: block;
-    position: fixed;
-    top: var(--blocks-phase-one-top);
-    left: calc(33.33% - 24px);
-    width: 48px;
-    height: 48px;
-    background-color: blue;
-    padding: 16px;
-    border-radius: 100%;
-    border-color: purple;
-  }
-  dvh-test-two {
-    display: block;
-    position: fixed;
-    top: var(--blocks-phase-one-top);
-    left: calc(66.66% - 24px);
-    width: 48px;
-    height: 48px;
-    padding: 16px;
-    background-color: green;
-    border-radius: 100%;
-    border-color: yellow;
-  }
-
   /* System Font Stack */
   font-family:
     -apple-system,
