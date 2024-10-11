@@ -10,6 +10,15 @@ body {
   /* https://colors.dopely.top/color-pedia/282c3c */
   --primary-text-color: #efefef;
 
+  --font-step--2: clamp(0.4444rem, 0.662rem + -0.272vw, 0.6076rem);
+  --font-step--1: clamp(0.6667rem, 0.75rem + -0.1042vw, 0.7292rem);
+  --font-step-0: clamp(0.875rem, 0.8333rem + 0.2083vw, 1rem);
+  --font-step-1: clamp(1.05rem, 0.9rem + 0.75vw, 1.5rem);
+  --font-step-2: clamp(1.26rem, 0.93rem + 1.65vw, 2.25rem);
+  --font-step-3: clamp(1.512rem, 0.891rem + 3.105vw, 3.375rem);
+  --font-step-4: clamp(1.8144rem, 0.7317rem + 5.4135vw, 5.0625rem);
+  --font-step-5: clamp(2.1773rem, 0.3718rem + 9.0275vw, 7.5938rem);
+
   --blocks-offset-left: 0px;
   --blocks-offset-top: 0px;
   --block-width: 25.5px;
@@ -174,7 +183,7 @@ main {
     }
   }
 
-  /* Slightly larger second line for first page */
+  /* Slightly larger first line for first and last pages */
   prisenco-tech {
     h2 {
       font-size: clamp(1.26rem, 0.93rem + 1.65vw, 2.25rem);
@@ -261,13 +270,17 @@ main {
   }
 
   skills-cloud {
+    h1 {
+      font-size: clamp(1.512rem, 0.891rem + 3.105vw, 3.375rem);
+    }
+    h2 {
+      font-size: clamp(1.05rem, 0.9rem + 0.75vw, 1.5rem);
+    }
     h1,
     h2 {
-      width: max(50vw, 320px);
+      width: clamp(320px, 80vw, 880px);
       display: flex;
       justify-content: space-around;
-      font-size: max(1.6rem, 3vw);
-      font-weight: 600;
       span {
         padding: 0.2vw 1.2vw;
         border-radius: 0.8vw;
@@ -279,11 +292,27 @@ main {
         }
       }
     }
+    @media (max-width: 736px) {
+      small-skills {
+        margin: 0;
+        display: flex;
+        column-gap: 32px;
+        justify-content: space-around;
+        h2 {
+          margin: 0;
+          margin-top: 16px;
+          width: fit-content;
+          row-gap: 12px;
+          text-align: left;
+          display: flex;
+          justify-content: start;
+          flex-direction: column;
+        }
+      }
+    }
 
     h2 {
       margin-top: 1.2vw;
-      font-weight: 500;
-      font-size: max(0.6rem, 1.2vw);
     }
   }
 }
