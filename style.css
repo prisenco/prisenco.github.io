@@ -5,6 +5,16 @@
   box-sizing: border-box;
 }
 
+#dvh-test {
+  position: fixed;
+  width: 20vw;
+  height: 100dvh;
+  background-color: rgba(128, 0, 128, 0.5);
+  padding: 1vw;
+  border: 1px solid blue;
+  z-index: 100;
+}
+
 body {
   /* Ref: Valhalla */
   /* https://colors.dopely.top/color-pedia/282c3c */
@@ -46,10 +56,10 @@ body {
     --blocks-phase-three-left: calc(97vw - 9 * var(--block-width));
     --blocks-phase-four-left: calc(1 * var(--block-width));
 
-    --blocks-phase-one-top: calc(100svh - 10 * var(--block-height));
+    --blocks-phase-one-top: calc(100dvh - 10 * var(--block-height));
     --blocks-phase-two-top: 12dvh;
     --blocks-phase-three-top: 12dvh;
-    --blocks-phase-four-top: calc(100svh - 11 * var(--block-height));
+    --blocks-phase-four-top: calc(100dvh - 11 * var(--block-height));
   }
 
   /* System Font Stack */
