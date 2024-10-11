@@ -1,0 +1,270 @@
+/* Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  /* Ref: Valhalla */
+  /* https://colors.dopely.top/color-pedia/282c3c */
+  --primary-text-color: #efefef;
+
+  --blocks-offset-left: 0px;
+  --blocks-offset-top: 0px;
+  --block-width: 25.5px;
+  --block-height: 25.5px;
+  @media (max-width: 992px) {
+    --block-width: 19.125px;
+    --block-height: 19.125px;
+  }
+  @media (max-width: 736px) {
+    --block-width: 12.75px;
+    --block-height: 12.75px;
+  }
+  @media (max-width: 500px) {
+    --block-width: 6.375px;
+    --block-height: 6.375px;
+  }
+
+  --blocks-top: calc(80vh - 9 * var(--block-height));
+  --blocks-left: calc(1 * var(--block-width));
+
+  @media (max-width: 500px) {
+    --blocks-left: 0px;
+  }
+
+  /* System Font Stack */
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    avenir next,
+    avenir,
+    segoe ui,
+    helvetica neue,
+    helvetica,
+    Cantarell,
+    Ubuntu,
+    roboto,
+    noto,
+    arial,
+    sans-serif;
+  color: var(--primary-text-color);
+
+  margin: 0;
+  padding: 0;
+
+  @supports not (background-attachment: fixed) {
+    background-color: rgb(29, 32, 43);
+    background-image: url("img/noise.png"),
+      repeating-linear-gradient(
+        6deg,
+        rgba(56, 61, 82, 0.35) 0px,
+        rgba(82, 82, 82, 0.35) 0.068vw,
+        transparent 0.068vw,
+        transparent 2.11vw
+      ),
+      repeating-linear-gradient(
+        96deg,
+        rgba(56, 61, 82, 0.35) 0px,
+        rgba(56, 61, 82, 0.35) 0.068vw,
+        transparent 0.068vw,
+        transparent 2.11vw
+      );
+  }
+
+  @supports (background-attachment: fixed) {
+    background-image: url("img/noise.png"),
+      repeating-linear-gradient(
+        6deg,
+        rgba(56, 61, 82, 0.35) 0px,
+        rgba(82, 82, 82, 0.35) 0.068vw,
+        transparent 0.068vw,
+        transparent 2.11vw
+      ),
+      repeating-linear-gradient(
+        96deg,
+        rgba(56, 61, 82, 0.35) 0px,
+        rgba(56, 61, 82, 0.35) 0.068vw,
+        transparent 0.068vw,
+        transparent 2.11vw
+      ),
+      radial-gradient(
+        circle at center,
+        rgb(0, 0, 0, 0%) 0%,
+        rgb(0, 0, 0, 25%),
+        85%,
+        rgb(0, 0, 0, 100%) 100%
+      ),
+      linear-gradient(90deg, rgb(39, 43, 58), rgb(39, 43, 58));
+    background-attachment: fixed;
+  }
+
+  overscroll-behavior: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  overscroll-behavior: none;
+}
+
+main {
+  display: block;
+  width: min(80vw, 880px);
+  height: fit-content;
+  margin: 0 auto;
+
+  h1 {
+    width: 80%;
+    text-align: center;
+    letter-spacing: 0.16vw;
+    font-weight: 800;
+    font-size: clamp(2rem, 4vw, 5rem);
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+    margin: 0;
+  }
+
+  h2,
+  h3 {
+    width: 80%;
+    text-align: center;
+    letter-spacing: clamp(0.16rem, 0.32vw, 0.3rem);
+    font-weight: 500;
+    font-size: clamp(0.9rem, 1.6vw, 1.2rem);
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+    margin: 0 0 1vw 0;
+  }
+
+  page-one {
+    h1 {
+      width: fit-content;
+      font-size: 10vw;
+    }
+    h2,
+    h3 {
+      font-size: 2.2vw;
+      letter-spacing: clamp(0.16rem, 0.32vw, 0.3rem);
+    }
+    h3 {
+      display: flex;
+      gap: 110px;
+      margin-left: 20px;
+      width: fit-content;
+      margin-bottom: 0;
+    }
+    logo-area {
+      display: flex;
+      gap: 64px;
+    }
+    small-logo {
+      margin-top: 48px;
+    }
+    qr-code {
+      border-radius: 16px;
+      padding: 16px;
+      background-color: #fff;
+      margin: 32px 0;
+    }
+    display: flex;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+building-block {
+  display: block;
+  position: fixed;
+  width: 1vw;
+  height: 1vw;
+  background-color: rgba(255, 255, 255, 0.75);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.25);
+  border-radius: 100%;
+}
+building-block:nth-of-type(1) {
+  left: 88vw;
+  top: 63vh;
+  background-color: rgba(255, 255, 255, calc(0.27 / 2));
+}
+building-block:nth-of-type(2) {
+  left: 51vw;
+  top: 36vh;
+  background-color: rgba(255, 255, 255, calc(0.44 / 2));
+}
+building-block:nth-of-type(3) {
+  left: 63vw;
+  top: 72vh;
+  background-color: rgba(255, 255, 255, calc(0.57 / 2));
+}
+building-block:nth-of-type(4) {
+  left: 7vw;
+  top: 64vh;
+  background-color: rgba(255, 255, 255, calc(0.26 / 2));
+}
+building-block:nth-of-type(5) {
+  left: 52vw;
+  top: 82vh;
+  background-color: rgba(255, 255, 255, calc(0.21 / 2));
+}
+building-block:nth-of-type(6) {
+  left: 21vw;
+  top: 45vh;
+  background-color: rgba(255, 255, 255, calc(0.38 / 2));
+}
+building-block:nth-of-type(7) {
+  left: 35vw;
+  top: 79vh;
+  background-color: rgba(255, 255, 255, calc(0.18 / 2));
+}
+building-block:nth-of-type(8) {
+  left: 26vw;
+  top: 22vh;
+  background-color: rgba(255, 255, 255, calc(0.34 / 2));
+}
+building-block:nth-of-type(9) {
+  left: 71vw;
+  top: 17vh;
+  background-color: rgba(255, 255, 255, calc(0.13 / 2));
+}
+building-block:nth-of-type(10) {
+  left: 74vw;
+  top: 91vh;
+  background-color: rgba(255, 255, 255, calc(0.28 / 2));
+}
+building-block:nth-of-type(11) {
+  left: 66vw;
+  top: 59vh;
+  background-color: rgba(255, 255, 255, calc(0.36 / 2));
+}
+building-block:nth-of-type(12) {
+  left: 90vw;
+  top: 35vh;
+  background-color: rgba(255, 255, 255, calc(0.34 / 2));
+}
+building-block:nth-of-type(13) {
+  left: 42vw;
+  top: 19vh;
+  background-color: rgba(255, 255, 255, calc(0.19 / 2));
+}
+building-block:nth-of-type(14) {
+  left: 19vw;
+  top: 82vh;
+  background-color: rgba(255, 255, 255, calc(0.34 / 2));
+}
+building-block:nth-of-type(15) {
+  left: 28vw;
+  top: 60vh;
+  background-color: rgba(255, 255, 255, calc(0.28 / 2));
+}
+building-block:nth-of-type(16) {
+  left: 81vw;
+  top: 31vh;
+  background-color: rgba(255, 255, 255, calc(0.14 / 2));
+}
+building-block:nth-of-type(17) {
+  left: 74vw;
+  top: 42vh;
+  background-color: rgba(255, 255, 255, calc(0.16 / 2));
+}
