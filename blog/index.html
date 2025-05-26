@@ -40,9 +40,6 @@
     <meta property="og:url" content="https://prisen.co" />
     <meta property="og:image" content="https://prisen.co/img/og-image.png" />
 
-    <!-- Polyfill for Safari -->
-    <script src="js/scroll-timeline.js"></script>
-
     <link
       rel="mask-icon"
       href="/favicon/safari-pinned-tab.svg"
@@ -56,9 +53,16 @@
   <body>
     <header>
       <nav>
-        <a href="/"
+        <a href="/#prisenco"
           ><img src="/img/prisenco.png" alt="Prisenco logo" />Prisenco</a
         >
+
+        <nav-items>
+          <a href="#"><b>Blog</b></a>
+        </nav-items>
+
+        <a href="/#lets-build" class="desktop">Let's Build</a>
+        <a href="/#lets-build" class="mobile">Build</a>
       </nav>
       <building-block></building-block>
       <building-block></building-block>
@@ -79,33 +83,22 @@
       <building-block></building-block>
     </header>
     <main>
-      <lets-build id="lets-build">
-        <h1>Let's build</h1>
-        <h2>
-          <a href="/blog">
-            <img src="/icons/blog.svg" alt="Blog icon" />Blog
-          </a>
-          <a href="https://news.ycombinator.com/user?id=prisenco">
-            <img src="/icons/hackernews.svg" alt="Hacker News icon" />Hn
-          </a>
-          <a href="https://twitter.com/prisencotech">
-            <img src="/icons/twitter.svg" alt="Twitter icon" />Twitter
-          </a>
-          <a href="https://www.reddit.com/user/prisencotech/">
-            <img src="/icons/reddit.svg" alt="Reddit icon" />Reddit
-          </a>
-          <a href="mailto:tech@prisen.co">
-            <img src="/icons/email.svg" alt="Email icon" />Email
-          </a>
-        </h2>
-        <h3>
-          Ready to accelerate your startup's technical development? Let's
-          discuss how my full-stack expertise and startup-savvy approach can
-          help bring your vision to life. I'm eager to learn about your
-          challenges and explore how we can build a scalable, market-ready
-          product together
-        </h3>
-      </lets-build>
+
+      <blog-articles>
+        <section aria-labelledby="recent-articles">
+          <h2 id="recent-articles">Recent Articles</h2>
+          <ul>
+            <li>
+              <article>
+                <h3><a href="/blog/startup-engineering-2025">Startup Engineering in 2025</a></h3>
+                <time datetime="2025-05-26">May 26, 2025</time>
+                <p>What I do, what I'm up to, where we're headed.</p>
+              </article>
+            </li>
+          </ul>
+        </section>
+      </blog-articles>
+
     </main>
   </body>
 </html>

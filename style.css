@@ -1542,12 +1542,18 @@ building-block:nth-of-type(16) {
     margin-top: calc(6 * var(--block-spacing));
     border-radius: 0;
     box-shadow: none;
-    background-color: white;
+  background-color: white;
   }
 }
 building-block:nth-of-type(17) {
   animation: building-block-seventeen ease-out;
   animation-timeline: scroll(root);
+}
+
+body:not(#home) {
+  building-block {
+    opacity: 0.25;
+  }
 }
 
 /* Tried to come up with a predictable formula based on each
@@ -1674,7 +1680,7 @@ nav {
     padding: 0.5vw 0;
   }
   a[href="/"],
-  a[href="#prisenco"] {
+  a[href="/#prisenco"] {
     background-color: rgba(56, 61, 82, 1);
     border: 1px solid white;
     padding: 0.5vw 1vw 0 1vw;
@@ -1686,7 +1692,7 @@ nav {
       margin-right: 4px;
     }
   }
-  a[href="#lets-build"] {
+  a[href="/#lets-build"] {
     border-radius: 8px;
     padding: 0.5vw 1vw;
     min-height: fit-content;
@@ -1697,7 +1703,7 @@ nav {
     font-weight: 600;
     text-decoration: none;
   }
-  a[href="#lets-build"].mobile {
+  a[href="/#lets-build"].mobile {
     display: none;
   }
 
@@ -1723,31 +1729,76 @@ nav {
     nav-items {
       width: fill-content;
     }
-    a[href="#lets-build"].mobile {
+    a[href="/#lets-build"].mobile {
       display: block;
     }
-    a[href="#lets-build"].desktop {
+    a[href="/#lets-build"].desktop {
       display: none;
     }
   }
 
   @media (max-width: 500px) {
-    a[href="#prisenco"],
-    a[href="#lets-build"].mobile {
+    a[href="/#prisenco"],
+    a[href="/#lets-build"].mobile {
       font-size: 1.2rem;
     }
-    a[href="#prisenco"] {
+    a[href="/#prisenco"] {
       padding: 0.5vw 4vw;
       img {
         width: 16px;
         height: 16px;
       }
     }
-    a[href="#lets-build"].mobile {
+    a[href="/#lets-build"].mobile {
       padding: 0.5vw 6vw;
     }
     nav-items {
       display: none;
+    }
+  }
+}
+
+/* Blog */
+blog-articles {
+  display: flex;
+  margin-top: 15vh;
+  border-radius: 1vw;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+  padding: 3vw;
+  section {
+    width: 100%;
+    ul {
+      margin-top: 3vw;
+      padding: 0;
+    }
+    ul li {
+      list-style-type: none;
+      article {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        h3, time {
+          flex-basis: 50%;
+        }
+        p {
+          flex-basis: 100%;
+          font-style: italic;
+          margin-top: 0.5vw;
+        }
+        h3 {
+          text-align: left;
+        }
+        time {
+          text-align: right;
+        }
+        a {
+          font-weight: bold;
+          text-decoration: none;
+          color: white;
+        }
+      }
     }
   }
 }
